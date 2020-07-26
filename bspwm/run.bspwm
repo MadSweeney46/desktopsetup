@@ -1,0 +1,10 @@
+#!/bin/bash
+
+##Set wallpaper
+nitrogen --restore &
+
+##Set de keyboard layout
+setxkbmap de &
+
+##Run bspwm
+bspwm
