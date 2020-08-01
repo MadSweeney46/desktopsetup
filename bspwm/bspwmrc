@@ -7,9 +7,6 @@
 # Kill allprocesses quietly and wait till they have been shut down before we start them again in the "Autostart" section #
 ##########################################################################################################################
 
-killall -q polybar
-while pgrep -u $UID -x polybar >/dev/null; do sleep 1; done
-
 killall -q sxhkd
 while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; done
 
@@ -30,7 +27,8 @@ sxhkd &
 ###Polybar
 #polybar mainbar &
 
-polybar bar &
+##polybar bar &
+$HOME/.config/polybar/launchpolybar.sh
 ###Polybar end
 
 ##Autostart end
@@ -38,7 +36,11 @@ polybar bar &
 #bspc monitor -d I II III IV V VI VII VIII IX X
 ##bspc monitor -d 1 2 3
 ##bspc monitor eDP1 -d I II III IV
-bspc monitor eDP1 -d 1 2 3
+##bspc monitor eDP1 -d 1 2 3
+
+bspc monitor -d DVI-D-0 1 2 3
+bspc monitor -d HDMI-A-0 4 5 6
+
 
 bspc config border_width         2
 bspc config window_gap          12
