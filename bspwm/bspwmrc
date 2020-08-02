@@ -28,7 +28,7 @@ sxhkd &
 #polybar mainbar &
 
 ##polybar bar &
-$HOME/.config/polybar/launchpolybar.sh
+$HOME/.config/desktopsetup/polybar/launchpolybar.sh
 ###Polybar end
 
 ##Autostart end
