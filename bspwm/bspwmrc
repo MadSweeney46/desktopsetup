@@ -1,4 +1,4 @@
-#! /bin/sh
+#! /bin/bash
 
 
 ##Killall
@@ -27,19 +27,27 @@ sxhkd &
 ###Polybar
 #polybar mainbar &
 
+##Autostart end
+
+#bspc monitor -d I II III IV V VI VII VIII IX X
+#bspc monitor -d 1 2 3
+##bspc monitor eDP1 -d I II III IV
+##bspc monitor eDP1 -d 1 2 3
+
+#bspc monitor -d HDMI-A-0 1 2 3
+#bspc monitor -d DVI-D-0 1 2 3
+k=1
+for m in $(polybar --list-monitors | cut -d":" -f1); do
+	bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
+	k=2
+done
+
+
 ##polybar bar &
 $HOME/.config/desktopsetup/polybar/launchpolybar.sh
 ###Polybar end
 
-##Autostart end
 
-#bspc monitor -d I II III IV V VI VII VIII IX X
-##bspc monitor -d 1 2 3
-##bspc monitor eDP1 -d I II III IV
-##bspc monitor eDP1 -d 1 2 3
-
-bspc monitor -d DVI-D-0 1 2 3
-bspc monitor -d HDMI-A-0 4 5 6
 
 
 bspc config border_width         2
