@@ -36,16 +36,29 @@ sxhkd &
 
 #bspc monitor -d HDMI-A-0 1 2 3
 #bspc monitor -d DVI-D-0 1 2 3
-k=1
+
+
+mcounter=0
 for m in $(polybar --list-monitors | cut -d":" -f1); do
-	bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
-	k=2
+	((mcounter=mcounter+1))
 done
 
+if [ $mcounter -gt 0 ]; then
+	if [ $mcounter -eq 1 ]; then
+		bspc monitor $(polybar --list-monitors | cut -d":" -f1) -d 1 2 3 4
+		$HOME/.config/desktopsetup/polybar/launchsinglepolybar.sh
+	else
+		k=1
+		for m in $(polybar --list-monitors | cut -d":" -f1); do
+			bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
+			k=2
+		done
+		##polybar bar &
+		$HOME/.config/desktopsetup/polybar/launchtwopolybars.sh
+		###Polybar end
+	fi
+fi
 
-##polybar bar &
-$HOME/.config/desktopsetup/polybar/launchpolybar.sh
-###Polybar end
 
 
 

@@ -27,6 +27,46 @@ foreground = ${xrdb:color7:#FF5555}
 ; | |_) | (_| | |  \__ \
 ; |_.__/ \__,_|_|  |___/
 
+
+[bar/singleMainBar]
+monitor = ${env:MONITOR}
+enable-ipc=true
+height = 30
+width = 80%
+offset-x = 10%
+offset-y = 10
+radius = 15
+border-size = 0
+border-color = ${colors.foreground}
+
+
+background = ${colors.background}
+;background = ${colors.primary}
+foreground = ${colors.foreground}
+
+line-size = 2
+
+padding=2
+font-0=cherry:size=14;3
+font-1=Font Awesome 5 Free Solid:size=8;2
+font-2=Font Awesome 5 Free Regular:size=8;2
+font-3=Font Awesome 5 Brands:size=8;2
+font-4=font\-logos:size=10;2
+font-5=IPAGothic:size=11;2
+
+modules-left = bspwmJustOne
+modules-center = time
+modules-right = cpu memory battery pulseaudio power
+
+scroll-up = bspwn-wsnext
+scroll-down = bspwn-wsprev
+
+wm-restack = bspwm
+override-redirect = false
+
+
+
+
 [bar/bar0]
 monitor = ${env:MONITOR}
 enable-ipc=true
@@ -108,6 +148,63 @@ override-redirect = false
 ; | | | | | | (_) | (_| | |_| | |  __/\__ \
 ; |_| |_| |_|\___/ \__,_|\__,_|_|\___||___/
 
+[module/bspwmJustOne]
+type = internal/bspwm
+format = <label-state> <label-mode>
+format-foreground = ${colors.foreground}
+format-background = ${colors.background}
+index-sort = true
+
+enable-click = true
+enable-scroll = false
+reverse-scroll = false
+pin-workspaces = true
+
+
+label-focused = %icon%
+label-focused-underline = ${colors.foreground}
+label-focused-padding = 2
+label-focused-background = #6790eb
+label-focused-foreground = ${colors.foreground}
+
+label-occupied = %icon%
+label-occupied-padding = 2
+label-occupied-background = ${colors.background}
+label-occupied-underline = ${colors.foreground}
+
+
+label-empty = %icon%
+label-empty-padding = 2
+label-empty-background = ${colors.background}
+label-empty-foreground = ${colors.foreground}
+
+label-urgent = %icon%
+label-urgent-padding = 2
+label-urgent-foreground = ${colors.foreground}
+label-urgent-background = ${colors.foreground}
+label-urgent-overline = ${colors.foreground}
+label-urgent-font = 2
+
+#fuzzy-match = true
+# 
+ws-icon-0 = 1;
+ws-icon-1 = 3;
+ws-icon-2 = 5;
+
+ws-icon-3 = 4;
+ws-icon-4 = 2;
+#ws-icon-5 = 6; 
+
+
+
+;ws-icon-9 = 10;
+ws-icon-default = 
+
+
+
+
+
+
 [module/bspwmMZero]
 type = internal/bspwm
 format = <label-state> <label-mode>
@@ -152,7 +249,7 @@ ws-icon-1 = 3;
 ws-icon-2 = 5;
 
 #ws-icon-3 = 4;
-#ws-icon-4 = 5;
+#ws-icon-4 = 2;
 #ws-icon-5 = 6; 
 
 
