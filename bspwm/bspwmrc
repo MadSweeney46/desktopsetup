@@ -36,7 +36,13 @@ sxhkd &
 
 #bspc monitor -d HDMI-A-0 1 2 3
 #bspc monitor -d DVI-D-0 1 2 3
+#We have to get both monitor names.
+#We want 3 desktops on each monitor. Desktops with odd numbers are displayed on the main monitor and desktops with even numbers are displayed on the secondary monitor
 
+#that should be pretty easy. We get a list of all monitors with "$(polybar --list-monitors | cut -d":" -f1)"
+#we multiply 3 by the number of monitors start at 1
+#we add a desktop to a monitor, increase the counter and switch the monitor
+#if we are at the last monitor we check if its the last monitor in this array. If thats the case
 
 mcounter=0
 for m in $(polybar --list-monitors | cut -d":" -f1); do
