@@ -20,12 +20,11 @@ while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; done
 sxhkd &
 ###sxhkd end
 
-###Set wallpaper
-#nitrogen --restore &
-###Set wallpaper end
+###bspwm swallow script
 
-###Polybar
-#polybar mainbar &
+pgrep ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow || ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow &
+
+###bspwm swallow script end
 
 ##Autostart end
 

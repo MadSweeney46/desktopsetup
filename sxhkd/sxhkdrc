@@ -74,7 +74,7 @@ super + shift + {j,k}
 
 ##Switch to prev/next desktop
 super + {j,k}
-	bspc desktop {prev,next} -f
+	bspc desktop $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {-,+} ) -f
 ##Switch to prev/next desktop end
 
 # quit/restart bspwm
