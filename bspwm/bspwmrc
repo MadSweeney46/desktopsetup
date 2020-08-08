@@ -51,15 +51,33 @@ done
 
 if [ $mcounter -gt 0 ]; then
 	if [ $mcounter -eq 1 ]; then
+		echo "kleiner 1 = 1"
 		bspc monitor $(polybar --list-monitors | cut -d":" -f1) -d 1 2 3 4
 		$HOME/.config/desktopsetup/polybar/launchsinglepolybar.sh
 	else
+		#echo "greater 1 mcounter=" $mcounter 
+		#echo "start"
+		#i=1
+		#for z  in $listOfMonitors; do
+		#	bspc monitor -d Desktop
+		#done
+		anzDesktopsPerMonitor=3
+		listOfMonitors=$(polybar --list-monitors | cut -d":" -f1)
+		#while (( i < (( mcounter*anzDesktopsPerMonitor )))); do
+        	#	echo $i
+        	#	for k in $listOfMonitors; do
+                #		echo $k " and " $i
+                #		bspc monitor $k -a $i
+                #		((i=i+1))
+        	#	done    
+		#done
+
 		k=1
 		for m in $(polybar --list-monitors | cut -d":" -f1); do
 			bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
 			k=2
 		done
-		##polybar bar &
+		#polybar bar &
 		$HOME/.config/desktopsetup/polybar/launchtwopolybars.sh
 		###Polybar end
 	fi
