@@ -16,6 +16,7 @@
 ### Alias start
 alias ls='ls --color=auto'
 alias v="nvim"
+alias :q='exit'
 ### Alias end
 
 
