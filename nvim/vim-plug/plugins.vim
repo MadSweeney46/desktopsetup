@@ -14,5 +14,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     "Hex Color
     Plug 'etdev/vim-hexcolor'
     "Hex Color 2
-    Plug 'chrisbra/colorizer'    
+    Plug 'chrisbra/colorizer'
+    "Powerline for vim
+    Plug 'vim-airline/vim-airline'
+    "Powerline themes for vim
+    Plug 'vim-airline/vim-airline-themes'
 call plug#end()
