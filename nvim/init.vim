@@ -22,5 +22,15 @@ map <C-n> :NERDTreeToggle<CR>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "Closes the vim editor if the only open window is nerdtree end
 
+"Vim Ocean-Next Theme
+if (has("termguicolors"))
+ set termguicolors
+endif
+
+" Theme
+syntax enable
+colorscheme nord
+
+
 "Vim Powerline theme
-let g:airline_theme='badwolf'
+let g:airline_theme='nord'

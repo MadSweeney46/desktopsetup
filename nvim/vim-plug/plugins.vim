@@ -19,4 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     "Powerline themes for vim
     Plug 'vim-airline/vim-airline-themes'
+    "Oceanic-Next theme
+    Plug 'mhartington/oceanic-next'
+    "Nord theme
+    Plug 'arcticicestudio/nord-vim'
+
 call plug#end()
