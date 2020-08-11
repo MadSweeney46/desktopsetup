@@ -155,11 +155,12 @@ super + ctrl + space
 ##Resizing is cool but it sucks if you have to do it like that. This needs to be reconfigured
 # expand a window by moving one of its side outward
 super + alt + {h,j,k,l}
-	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+	$HOME/.config/sxhkd/scripts/resizeNodes.sh {left,down,up,right}
+	#bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
-	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+#super + alt + shift + {h,j,k,l}
+#	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 
 
