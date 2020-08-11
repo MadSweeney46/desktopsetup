@@ -1,19 +1,10 @@
 ;==========================================================
-;
-;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
 ;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
 ;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
 ;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
 ;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
-;
-;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
 ;==========================================================
 
 [colors]
@@ -217,6 +208,10 @@ enable-scroll = false
 reverse-scroll = false
 pin-workspaces = true
 
+label-dimmed = %icon%
+label-dimmed-foreground = #1f2
+label-dimmed-underline = #5cc
+label-dimmed-focused-background = #f85
 
 label-focused = %icon%
 label-focused-underline = ${colors.foreground}
@@ -269,6 +264,11 @@ enable-click = true
 enable-scroll = false
 reverse-scroll = false
 pin-workspaces = true
+
+label-dimmed = %icon%
+label-dimmed-foreground = #11f
+label-dimmed-underline = #968                 
+label-dimmed-focused-background = #888 
 
 
 label-focused = %icon%
