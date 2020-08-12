@@ -45,7 +45,7 @@ font-3=Font Awesome 5 Brands:size=8;2
 font-4=font\-logos:size=10;2
 font-5=IPAGothic:size=11;2
 
-modules-left = bspwmJustOne
+modules-left = bspwmJustOne pulseaudiocontrol
 modules-center = time
 modules-right = cpu memory battery pulseaudio power
 
@@ -62,9 +62,9 @@ override-redirect = false
 monitor = ${env:MONITOR}
 enable-ipc=true
 height = 30
-width = 80%
-offset-x = 10%
-offset-y = 10
+width = 100%
+offset-x = 0
+offset-y = 
 radius = 15
 border-size = 0
 border-color = ${colors.foreground}
@@ -84,9 +84,9 @@ font-3=Font Awesome 5 Brands:size=8;2
 font-4=font\-logos:size=10;2
 font-5=IPAGothic:size=11;2
 
-modules-left = bspwmMZero
+modules-left = bspwmMZero pulseaudiocontrol
 modules-center = time
-modules-right = cpu memory battery pulseaudio power
+modules-right = cpu memory battery power
 
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
@@ -125,7 +125,7 @@ font-5=
 
 modules-left = bspwmMOne 
 modules-center = time
-modules-right = 
+modules-right = pulseaudiocontrol  
 
 scroll-up = bspwn-wsnext
 scroll-down = bspwn-wsprev
@@ -457,51 +457,20 @@ menu-3-0-exec = poweroff
 menu-1-0 = 
 menu-1-0-exec = i3-msg exit || openbox --exit
 
-;Spotify modules
 
-[module/previous]
+
+[module/pulseaudiocontrol]
+
 type = custom/script
-format-font = 2
-format-padding = 2
-format-foreground = ${colors.foreground}
-exec = echo ""
-exec-if = "pgrep spotify"
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+exec = pacman -Q | wc -l
+interval = 600
+click-left = $TERMINAL
+format-prefix = "Pulse"
+format-background = #ff0
+format-padding = 1
+initial = 1
+format-underline = ${colors.blue}
 
-
-[module/next]
-type = custom/script
-format-font = 2
-format-padding = 2
-format-foreground = ${colors.foreground}
-exec = echo ""
-exec-if = "pgrep spotify"
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
-
-[module/playpause]
-type = custom/ipc
-format-font = 2
-format-padding = 0
-format-foreground = ${colors.foreground}
-; Default
-hook-0 = echo ""
-; Playing
-hook-1 = echo ""
-; Paused
-hook-2 = echo ""
-initial = 2
-click-left = "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause"
-
-
-[module/spotify]
-type = custom/ipc
-format-foreground = ${colors.foreground}
-; Default
-hook-0 = echo ""
-; Playing/paused show song name and artist
-hook-1 = python3 ~/.scripts/spotify/spotify_status.py
-initial = 2
-click-left = i3-msg '[class="Spotify"] focus'
 
 [settings]
 screenchange-reload = true
