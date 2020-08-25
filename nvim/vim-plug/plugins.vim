@@ -7,21 +7,30 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
-    "File Explorer
-    Plug 'scrooloose/NERDTree'
-    "Auto pairs for '(' '[' '{'
-    Plug 'jiangmiao/auto-pairs'
-    "Hex Color
-    Plug 'etdev/vim-hexcolor'
-    "Hex Color 2
-    Plug 'chrisbra/colorizer'
-    "Powerline for vim
-    Plug 'vim-airline/vim-airline'
-    "Powerline themes for vim
-    Plug 'vim-airline/vim-airline-themes'
-    "Oceanic-Next theme
-    Plug 'mhartington/oceanic-next'
-    "Nord theme
-    Plug 'arcticicestudio/nord-vim'
+	"File Explorer
+	Plug 'scrooloose/NERDTree'
+	"Auto pairs for '(' '[' '{'
+	Plug 'jiangmiao/auto-pairs'
+	"Hex Color
+	Plug 'etdev/vim-hexcolor'
+	"Hex Color 2
+	Plug 'chrisbra/colorizer'
+	"Powerline for vim
+	Plug 'vim-airline/vim-airline'
+	"Powerline themes for vim
+	Plug 'vim-airline/vim-airline-themes'
+	"Oceanic-Next theme
+	Plug 'mhartington/oceanic-next'
+	"Nord theme
+	Plug 'arcticicestudio/nord-vim'
+	"Dart support for vim
+	Plug 'dart-lang/dart-vim-plugin'
+	"For dart autocompletion
+	Plug 'natebosch/vim-lsc'
+	Plug 'natebosch/vim-lsc-dart'
+	"Dart intelli sense
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	"Start screen for neovim
+	Plug 'hardcoreplayers/dashboard-nvim'
 
 call plug#end()
