@@ -32,5 +32,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	"Start screen for neovim
 	Plug 'hardcoreplayers/dashboard-nvim'
-
-call plug#end()
+	"FuzzyFinder
+	Plug 'junegunn/fzf'
+	Plug 'junegunn/fzf.vim'
+	call plug#end()

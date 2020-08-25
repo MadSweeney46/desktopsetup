@@ -200,3 +200,9 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+
+
+"Dashboard plugin setup
+let g:dashboard_default_executive ='fzf'
+
+let g:dashboard_default_header = 'commicgirl10'
