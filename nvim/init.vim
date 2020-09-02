@@ -1,6 +1,25 @@
-set number 
+"Show relative line numbers
+set number relativenumber
+"Vim Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
+"Remap the leader key to the Space-key
+:let mapleader = "\<Space>"
+"Remap Colon key to ö
+noremap ö :
 
+"toggle NerdTree on and of. Has little use on directly opened files since
+"nerdtree doesn't know the directory so it starts in $HOME
+map <C-f> :NERDTreeToggle<CR>
+"Split navigation shortcuts
+"Remapped from <C-w>+{split direction key} to <C-{split direction key}
+"This comes in handy for e.g. NerdTree Navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
+
+"something with the colorizer plugin
 :let g:colorizer_auto_color = 1
 
 "Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
@@ -10,25 +29,10 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 "Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
 "simple file end
 
-"toggle NerdTree on and of. Has little use on directly opened files since
-"nerdtree doesn't know the directory so it starts in $HOME
-map <C-f> :NERDTreeToggle<CR>
-"toggle NerdTree on and of. Has little use on directly opened files since
-"nerdtree doesn't know the directory so it starts in $HOME end
-
 
 "Closes the vim editor if the only open window is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "Closes the vim editor if the only open window is nerdtree end
-
-"Split navigation shortcuts
-"Remapped from <C-w>+{split direction key} to <C-{split direction key}
-"This comes in handy for e.g. NerdTree Navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
-
 "Vim Ocean-Next Theme
 if (has("termguicolors"))
  set termguicolors
@@ -36,18 +40,18 @@ endif
 
 " Theme
 syntax enable
-colorscheme nord
+colorscheme forest-night
 
 
 "Vim Powerline theme
-let g:airline_theme='nord'
+"let g:airline_theme='forest-night'
 
 
+" unicode symbols for airline
   if !exists('g:airline_symbols')
     let g:airline_symbols = {}
   endif
 
-" unicode symbols
 let g:airline_left_sep = '»'
 let g:airline_left_sep = '▶'
 let g:airline_right_sep = '«'
@@ -68,7 +72,7 @@ let g:airline_symbols.notexists = 'Ɇ'
 let g:airline_symbols.whitespace = 'Ξ'
 
 
-
+"Some coc stuff (used for flutter development) start
 "default keymaps for lsc (needed for flutter development)
 let g:lsc_auto_map = v:true
 
@@ -99,6 +103,11 @@ set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " Use command ':verbose imap <tab>' to make sure tab is not mapped by other plugin.
+"The two inoremaps below aren't really necessary. If the code completion
+"dropdown list is visiple we can navigate in there with the Tab key wich goes
+"the list of values down or Tab key + shift key which goes the dropdown list
+"up. The same can be accomplished with Ctrl+n which does the same as the Tab
+"key and with the Ctrl+p wich does the same as the Tab key + super key
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
@@ -142,9 +151,11 @@ endfunction
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
+" Can be removed in my opinion
 nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for format selected region
+" The two commands below can be removed in my opinion
 xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
@@ -184,7 +195,7 @@ set statusline^=%{coc#status()}%{get(b:,'coc_current_function','')}
 
 " Using CocList
 " Show all diagnostics
-nnoremap <silent> <space>a  :<C-u>CocList diagnostics<cr>
+nnoremap <silent> <space>d  :<C-u>CocList diagnostics<cr>
 " Manage extensions
 nnoremap <silent> <space>e  :<C-u>CocList extensions<cr>
 " Show commands
@@ -200,9 +211,39 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+"Some coc stuff (used for flutter development) end
 
 
-"Dashboard plugin setup
-let g:dashboard_default_executive ='fzf'
+"Startify stuff start
+let g:startify_bookmarks = [ {'f': '~/development/projects/life_manager/lib/'} ]
 
-let g:dashboard_default_header = 'commicgirl10'
+"Updates Startify page on the fly and not only, when Vim exits
+let g:startify_update_oldfiles = 0
+"Automatically update sessions in two cases:
+
+"    - Before leaving Vim
+"    - Before loading a new session via :SLoad
+let g:startify_session_persistence = 0
+
+let g:startify_lists = [
+          \ { 'type': 'bookmarks', 'header': ['   Bookmarks']      },
+          \ { 'type': 'files',     'header': ['   Recent files']            },
+          \ { 'type': 'dir',       'header': ['   CWD '. getcwd()] },
+          \ { 'type': 'sessions',  'header': ['   Sessions']       },
+          \ { 'type': 'commands',  'header': ['   Commands']       },
+          \ ]
+let g:startify_custom_header = [
+	     \ '                        ',
+	     \ '                        ',
+	     \ '   /$$   /$$  /$$$$$$   ',   
+             \ '   | $$  | $$ /$$__  $$ ',
+             \ '   | $$  | $$| $$  \__/ ',
+             \ '   | $$$$$$$$| $$$$$$$  ',
+             \ '   |_____  $$| $$__  $$ ',
+             \ '         | $$| $$  \ $$ ',
+             \ '         | $$|  $$$$$$/ ',
+             \ '         |__/ \______/  ',
+	     \ ]       
+
+let g:airline_powerline_fonts = 1
+"Startify stuff end
