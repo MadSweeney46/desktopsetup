@@ -23,6 +23,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'mhartington/oceanic-next'
 	"Nord theme
 	Plug 'arcticicestudio/nord-vim'
+	"Forest night theme
+	Plug 'sainnhe/forest-night'
+	"Better syntax highlighting. I have to check if this makes a difference
+	"Plug 'sheerun/vim-polyglot'
+	"Vim-Colors-XCode Theme
+	Plug 'arzg/vim-colors-xcode'
 	"Dart support for vim
 	Plug 'dart-lang/dart-vim-plugin'
 	"For dart autocompletion
@@ -31,8 +37,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	"Dart intelli sense
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	"Start screen for neovim
-	Plug 'hardcoreplayers/dashboard-nvim'
-	"FuzzyFinder
-	Plug 'junegunn/fzf'
-	Plug 'junegunn/fzf.vim'
+	Plug 'mhinz/vim-startify'
+	"VimDevicons shows the filetype icons in NERDTree or Startify
+	Plug 'ryanoasis/vim-devicons'
 	call plug#end()
