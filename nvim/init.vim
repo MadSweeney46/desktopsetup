@@ -18,6 +18,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"Shortcuts for switching between buffers
+map gh :bn<cr>
+map gl :bp<cr>
 
 "something with the colorizer plugin
 :let g:colorizer_auto_color = 1
@@ -244,6 +247,5 @@ let g:startify_custom_header = [
              \ '         | $$|  $$$$$$/ ',
              \ '         |__/ \______/  ',
 	     \ ]       
-
 let g:airline_powerline_fonts = 1
 "Startify stuff end
