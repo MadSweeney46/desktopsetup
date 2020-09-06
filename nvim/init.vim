@@ -6,6 +6,9 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 :let mapleader = "\<Space>"
 "Remap Colon key to ö
 noremap ö :
+"Fix indentation. The default is just too much
+set expandtab
+set shiftwidth=2
 
 "toggle NerdTree on and of. Has little use on directly opened files since
 "nerdtree doesn't know the directory so it starts in $HOME
@@ -21,6 +24,10 @@ map <C-l> <C-w>l
 "Shortcuts for switching between buffers
 map gh :bn<cr>
 map gl :bp<cr>
+
+"Quickly insert an empty new line without entering insert mode
+nnoremap <Leader>o o<Esc>
+nnoremap <Leader>O O<Esc>
 
 "something with the colorizer plugin
 :let g:colorizer_auto_color = 1
@@ -136,7 +143,7 @@ nmap <silent> ]c <Plug>(coc-diagnostic-next)
 " Remap keys for gotos
 nmap <silent> gt <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gv <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
 " Use K to show documentation in preview window
