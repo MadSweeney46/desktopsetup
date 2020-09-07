@@ -6,32 +6,46 @@
 # License:    MIT
 
 [options]
-font = Source Code Pro 12
+font = Source Code Pro 13
 
 
 [colors]
-cursor = #d8dee9
+#forest night colors start
+#a7c080
+#e68183
+#d3a0bc
+#d9bb80
+#89beba
+#e39b7b
+#d8caac
+#576268
+#3c474d
+#868d80
+#323d43 (background)
+#87c095
+#forest night colors end
+
+cursor = #a7c080
 cursor_foreground = #2e3440
 
-foreground = #d8dee9
-foreground_bold = #d8dee9
-background = #2e3440
+foreground = #a7c080
+foreground_bold = #a7c080
+background = #323d43
 
 highlight = #4c566a
 
-color0  = #3b4252
+color0  = #1a9
 color1  = #bf616a
-color2  = #a3be8c
-color3  = #ebcb8b
+color2  = #a3b
+color3  = #ebc
 color4  = #81a1c1
 color5  = #b48ead
 color6  = #88c0d0
-color7  = #e5e9f0
-color8  = #4c566a
+color7  = #e5e
+color8  = #4cf
 color9  = #bf616a
-color10 = #a3be8c
-color11 = #ebcb8b
-color12 = #81a1c1
+
+color12 = #87c095
 color13 = #b48ead
-color14 = #8fbcbb
-color15 = #eceff4
+color14 = #e39b7b
+color15 = #ece
