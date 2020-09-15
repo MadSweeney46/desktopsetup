@@ -14,7 +14,9 @@ super + @space
 super + Escape
 	pkill -USR1 -x sxhkd
 
-
+# tdrop
+super + alt + Return
+        tdrop -am -w 1892 -y 0 -x 14 termite
 
 ##System keys
 ### Volumen buttons
