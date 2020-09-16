@@ -38,4 +38,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'mhinz/vim-startify'
 	"VimDevicons shows the filetype icons in NERDTree or Startify
 	Plug 'ryanoasis/vim-devicons'
+        "Jsonc support since Coc does only supports Json
+        Plug 'kevinoid/vim-jsonc'
 	call plug#end()
