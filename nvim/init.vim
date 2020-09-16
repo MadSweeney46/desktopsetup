@@ -13,6 +13,15 @@ set shiftwidth=2
 "toggle NerdTree on and of. Has little use on directly opened files since
 "nerdtree doesn't know the directory so it starts in $HOME
 map <C-f> :NERDTreeToggle<CR>
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
+"simple file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
+"simple file end
+
 "Split navigation shortcuts
 "Remapped from <C-w>+{split direction key} to <C-{split direction key}
 "This comes in handy for e.g. NerdTree Navigation
@@ -32,12 +41,6 @@ nnoremap <Leader>O O<Esc>
 "something with the colorizer plugin
 :let g:colorizer_auto_color = 1
 
-"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
-"simple file
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
-"simple file end
 
 
 "Closes the vim editor if the only open window is nerdtree
@@ -52,7 +55,7 @@ endif
 syntax enable
 let g:forest_night_enable_italic = 1
 "let g:forest_night_disable_italic_comment = 1
-let g:forest_night_diagnostic_line_highlight = 1
+"let g:forest_night_diagnostic_line_highlight = 1
 let g:airline_theme = 'forest_night'
 colorscheme forest-night
 

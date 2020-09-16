@@ -25,8 +25,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'arcticicestudio/nord-vim'
 	"Forest night theme
 	Plug 'sainnhe/forest-night'
-	"Better syntax highlighting. I have to check if this makes a difference
-	"Plug 'sheerun/vim-polyglot'
 	"Vim-Colors-XCode Theme
 	Plug 'arzg/vim-colors-xcode'
 	"Dart support for vim
