@@ -12,7 +12,7 @@ set shiftwidth=2
 
 "toggle NerdTree on and of. Has little use on directly opened files since
 "nerdtree doesn't know the directory so it starts in $HOME
-map <C-f> :NERDTreeToggle<CR>
+map <C-n> :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 "Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
@@ -228,8 +228,16 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-"Some coc stuff (used for flutter development) end
-
+"Using CocCommand
+"Flutter run
+nnoremap <leader>fr :<C-u>CocCommand flutter.run<cr>
+"Flutter hot restart
+nnoremap <leader>hr :<C-u>CocCommand flutter.dev.hotRestart<cr>
+"Flutter open/close console
+nnoremap <leader>fsl :<C-u>CocCommand flutter.dev.openDevLog<cr>
+nnoremap <leader>fel :<C-u>execute "bd! " "output:///flutter-dev"<cr>
+"Flutter dev tools
+nnoremap <leader>fd :<C-u>CocCommand flutter.dev.openDevToolsProfiler<cr>
 
 "Startify stuff start
 let g:startify_bookmarks = [ {'f': '~/development/projects/life_manager/lib/'} ]
