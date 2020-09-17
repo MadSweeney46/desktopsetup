@@ -12,7 +12,7 @@ set shiftwidth=2
 
 "toggle NerdTree on and of. Has little use on directly opened files since
 "nerdtree doesn't know the directory so it starts in $HOME
-map <C-n> :NERDTreeToggle<CR>
+noremap TT :NERDTreeToggle<CR>
 let NERDTreeShowLineNumbers=1
 autocmd FileType nerdtree setlocal relativenumber
 "Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
@@ -125,11 +125,13 @@ set signcolumn=yes
 "the list of values down or Tab key + shift key which goes the dropdown list
 "up. The same can be accomplished with Ctrl+n which does the same as the Tab
 "key and with the Ctrl+p wich does the same as the Tab key + super key
-inoremap <silent><expr> <TAB>
-      \ pumvisible() ? "\<C-n>" :
-      \ <SID>check_back_space() ? "\<TAB>" :
-      \ coc#refresh()
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+
+"Not necessary TYo
+"inoremap <silent><expr> <TAB>
+"      \ pumvisible() ? "\<C-n>" :
+"      \ <SID>check_back_space() ? "\<TAB>" :
+"      \ coc#refresh()
+"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
@@ -232,7 +234,7 @@ nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 "Flutter run
 nnoremap <leader>fr :<C-u>CocCommand flutter.run<cr>
 "Flutter hot restart
-nnoremap <leader>hr :<C-u>CocCommand flutter.dev.hotRestart<cr>
+nnoremap <leader>fhr :<C-u>CocCommand flutter.dev.hotRestart<cr>
 "Flutter open/close console
 nnoremap <leader>fsl :<C-u>CocCommand flutter.dev.openDevLog<cr>
 nnoremap <leader>fel :<C-u>execute "bd! " "output:///flutter-dev"<cr>
