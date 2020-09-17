@@ -271,3 +271,8 @@ let g:startify_custom_header = [
 	     \ ]       
 let g:airline_powerline_fonts = 1
 "Startify stuff end
+
+"Cosco
+autocmd FileType dart nmap <silent> <C-c> <Plug>(cosco-commaOrSemiColon)
+"autocmd FileType dart imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
+"Cosco end

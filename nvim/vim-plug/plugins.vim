@@ -40,4 +40,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'ryanoasis/vim-devicons'
         "Jsonc support since Coc does only supports Json
         Plug 'kevinoid/vim-jsonc'
-	call plug#end()
+        "Adds commas or semicolons to the end of the line
+        Plug 'lfilho/cosco.vim'
+        call plug#end()
