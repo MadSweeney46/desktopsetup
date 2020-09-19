@@ -1,5 +1,11 @@
 "Show relative line numbers
 set number relativenumber
+"Ignore case sensitivity for commands
+set ic
+"Show partial search matches
+"set is
+"Enable filetype detection
+filetype on
 "Vim Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 "Remap the leader key to the Space-key
@@ -125,13 +131,11 @@ set signcolumn=yes
 "the list of values down or Tab key + shift key which goes the dropdown list
 "up. The same can be accomplished with Ctrl+n which does the same as the Tab
 "key and with the Ctrl+p wich does the same as the Tab key + super key
-
-"Not necessary TYo
-"inoremap <silent><expr> <TAB>
-"      \ pumvisible() ? "\<C-n>" :
-"      \ <SID>check_back_space() ? "\<TAB>" :
-"      \ coc#refresh()
-"inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
