@@ -1,5 +1,11 @@
 "Show relative line numbers
 set number relativenumber
+"Ignore case sensitivity for commands
+set ic
+"Show partial search matches
+"set is
+"Enable filetype detection
+filetype on
 "Vim Plugins
 source $HOME/.config/nvim/vim-plug/plugins.vim
 "Remap the leader key to the Space-key
@@ -12,7 +18,16 @@ set shiftwidth=2
 
 "toggle NerdTree on and of. Has little use on directly opened files since
 "nerdtree doesn't know the directory so it starts in $HOME
-map <C-f> :NERDTreeToggle<CR>
+noremap TT :NERDTreeToggle<CR>
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
+"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
+"simple file
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
+"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
+"simple file end
+
 "Split navigation shortcuts
 "Remapped from <C-w>+{split direction key} to <C-{split direction key}
 "This comes in handy for e.g. NerdTree Navigation
@@ -32,12 +47,6 @@ nnoremap <Leader>O O<Esc>
 "something with the colorizer plugin
 :let g:colorizer_auto_color = 1
 
-"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
-"simple file
-autocmd StdinReadPre * let s:std_in=1
-autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
-"Starts Nerdtree only if a directory is chosen. Vim does'n show up if its a
-"simple file end
 
 
 "Closes the vim editor if the only open window is nerdtree
@@ -52,7 +61,7 @@ endif
 syntax enable
 let g:forest_night_enable_italic = 1
 "let g:forest_night_disable_italic_comment = 1
-let g:forest_night_diagnostic_line_highlight = 1
+"let g:forest_night_diagnostic_line_highlight = 1
 let g:airline_theme = 'forest_night'
 colorscheme forest-night
 
@@ -144,14 +153,14 @@ inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
 nmap <silent> ]c <Plug>(coc-diagnostic-next)
 
-" Remap keys for gotos
+"gy and gv don't work. maybe they can be removed
 nmap <silent> gt <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gv <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 
-" Use K to show documentation in preview window
-nnoremap <silent> K :call <SID>show_documentation()<CR>
+"Show documentation in preview window
+nnoremap <silent> D :call <SID>show_documentation()<CR>
 
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -225,8 +234,16 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
-"Some coc stuff (used for flutter development) end
-
+"Using CocCommand
+"Flutter run
+nnoremap <leader>fr :<C-u>CocCommand flutter.run<cr>
+"Flutter hot restart
+nnoremap <leader>fhr :<C-u>CocCommand flutter.dev.hotRestart<cr>
+"Flutter open/close console
+nnoremap <leader>fsl :<C-u>CocCommand flutter.dev.openDevLog<cr>
+nnoremap <leader>fel :<C-u>execute "bd! " "output:///flutter-dev"<cr>
+"Flutter dev tools
+nnoremap <leader>fd :<C-u>CocCommand flutter.dev.openDevToolsProfiler<cr>
 
 "Startify stuff start
 let g:startify_bookmarks = [ {'f': '~/development/projects/life_manager/lib/'} ]
@@ -260,3 +277,8 @@ let g:startify_custom_header = [
 	     \ ]       
 let g:airline_powerline_fonts = 1
 "Startify stuff end
+
+"Cosco
+autocmd FileType dart nmap <silent> <C-c> <Plug>(cosco-commaOrSemiColon)
+"autocmd FileType dart imap <silent> <Leader>; <c-o><Plug>(cosco-commaOrSemiColon)
+"Cosco end

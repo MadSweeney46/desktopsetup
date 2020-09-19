@@ -23,8 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'arcticicestudio/nord-vim'
 	"Forest night theme
 	Plug 'sainnhe/forest-night'
-	"Better syntax highlighting. I have to check if this makes a difference
-	"Plug 'sheerun/vim-polyglot'
 	"Vim-Colors-XCode Theme
 	Plug 'arzg/vim-colors-xcode'
 	"Dart support for vim
@@ -38,4 +36,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	Plug 'mhinz/vim-startify'
 	"VimDevicons shows the filetype icons in NERDTree or Startify
 	Plug 'ryanoasis/vim-devicons'
-	call plug#end()
+        "Jsonc support since Coc does only supports Json
+        Plug 'kevinoid/vim-jsonc'
+        "Adds commas or semicolons to the end of the line
+        Plug 'lfilho/cosco.vim'
+        call plug#end()
