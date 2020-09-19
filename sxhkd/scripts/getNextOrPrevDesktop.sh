@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 allDesktops=($(bspc query -D --names))
 currentDesktop=$(bspc query -D -d --names)
 
@@ -19,6 +18,3 @@ elif [ $1 == "-" ]; then
 fi
 
 echo $currentDesktop
-#bspc node -d $(((  $(bspc query -D -d --names) {-,+} 1 ))) -f
-
-
