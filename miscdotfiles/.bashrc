@@ -17,14 +17,15 @@
 alias ls='ls --color=auto'
 alias v="nvim"
 alias :q='exit'
+alias grep='rg'
 ### Alias end
 
 
 ### bash powerline
 #powerline-daemon -q
-#POWERLINE_BASH_CONTINUATION=1
-#POWERLINE_BASH_SELECT=1
-#. /usr/share/powerline/bindings/bash/powerline.sh
+POWERLINE_BASH_CONTINUATION=1
+POWERLINE_BASH_SELECT=1
+#. /home/jan/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 ### bash powerline end
 
 PS1='[\u@\h \W]\$ '

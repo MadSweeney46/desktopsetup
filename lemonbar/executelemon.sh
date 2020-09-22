@@ -23,18 +23,24 @@ fi
 trap 'trap - TERM; kill 0' INT TERM QUIT EXIT
 
 # remove old panel fifo, create new one
-fifo="/tmp/panel_fifo"
-[ -e "$fifo" ] && rm "$fifo"
+fifo="./panel_fifo"
+#[ -e "$fifo" ]
 mkfifo "$fifo"
 
 #run each applet in subshell and output to fifo
-while :; do echo $(./bspwm.sh); sleep 5.1s; done > "$fifo" &
-#while :; do media; mpc idle player; done > "$fifo" &
-#while :; do pacheck; sleep 60m; done > "$fifo" &
+#Window manager
+while :; do echo $(./bspwm.sh); sleep 0.1s; done > "$fifo" &
+#Audio
+while :; do echo $(./audio.sh); sleep 0.1s; done > "$fifo" &
 #while :; do volume; sleep 0.5s; done > "$fifo" &
+#Datetime
 while :; do echo $(./datetime.sh); sleep 1s; done > "$fifo" &
 #while :; do launcher; break; done > "$fifo" &
-while :; do echo $(./batterymonitor.sh); sleep 3s; done > "$fifo" &
+#System monitoring
+while :; do echo $(./batterymonitor.sh); sleep 10s; done > "$fifo" &
+while :; do echo $(./cpu.sh); sleep 10s; done > "$fifo" &
+while :; do echo $(./memory.sh); sleep 10s; done > "$fifo" &
+
 
 #################
 # Build the bar #
@@ -51,8 +57,13 @@ while read -r line ; do
     batterymonitor*)
       batterymonitor="${line:14}"
       ;;
+    cpu*)
+      cpu="${line:3}"
+      ;;
+    memory*)
+      memory="${line:6}"
   esac
-  echo "%{l}${bspwm}%{c}${datetime}%{r}${batterymonitor}"
+  echo "%{l}${bspwm}%{c}${datetime}%{r}${memory} ${cpu} ${batterymonitor}"
 
 done < "$fifo" | lemonbar \
   -g "$panel_dimensions" \
