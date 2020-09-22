@@ -34,18 +34,19 @@ background = #323d43
 
 highlight = #4c566a
 
-color0  = #1a9
-color1  = #bf616a
+color0  = #1af
+color1  = #baf
 color2  = #a3b
 color3  = #ebc
-color4  = #81a1c1
-color5  = #b48ead
-color6  = #88c0d0
+color4  = #81a
+color5  = #b48
+color6  = #881
 color7  = #e5e
 color8  = #4cf
-color9  = #bf616a
-
+color9  = #d1d
+color10 = #d8caac
+color11 = #fff111
 color12 = #87c095
-color13 = #b48ead
+color13 = #b84
 color14 = #e39b7b
 color15 = #ece
