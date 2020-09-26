@@ -29,6 +29,9 @@ fifo="./panel_fifo"
 #[ -e "$fifo" ]
 mkfifo "$fifo"
 
+#Audio Widget must be executed manually the first time the lemonbar is launched, otherwise it won't show up since the script gets only triggered during volume changes
+echo $(./audio.sh) > "$fifo" &
+
 #run each applet in subshell and output to fifo
 #Window manager
 bspc subscribe report | while read -r line; do
