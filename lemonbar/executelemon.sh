@@ -34,12 +34,9 @@ echo $(./audio.sh) > "$fifo" &
 
 #run each applet in subshell and output to fifo
 #Window manager
-bspc subscribe report | while read -r line; do
-echo $(./bspwm.sh);
-done > "$fifo" &
-
+while :; do echo $(./bspwm.sh); sleep 0.1s; done > "$fifo" &
 #Audio
-#while :; do echo $(./audio.sh); sleep 0.1s; done > "$fifo" &
+while :; do echo $(./audio.sh); sleep 0.1s; done > "$fifo" &
 #while :; do volume; sleep 0.5s; done > "$fifo" &
 #Datetime
 while :; do echo $(./datetime.sh); sleep 1s; done > "$fifo" &
