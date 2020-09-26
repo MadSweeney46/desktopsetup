@@ -77,7 +77,7 @@ if [ $mcounter -gt 0 ]; then
 			k=2
 		done
 		#polybar bar &
-		$HOME/.config/desktopsetup/polybar/launchtwopolybars.sh
+		#$HOME/.config/desktopsetup/polybar/launchtwopolybars.sh
 		###Polybar end
 	fi
 fi
