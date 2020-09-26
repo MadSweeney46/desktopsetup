@@ -24,17 +24,17 @@ super + alt + Return
 #### Increase volume
 
 XF86AudioRaiseVolume
-	./scripts/changeVolume.sh +
+	$HOME/.config/sxhkd/scripts/changeVolume.sh +
 #### Increase volume end
 
 #### Decrease volume
 XF86AudioLowerVolume
-	./scripts/changeVolume.sh -
+	$HOME/.config/sxhkd/scripts/changeVolume.sh -
 #### Decrease volume end
 
 #### Mute
 XF86AudioMute
-	./scripts/changeVolume.sh m
+	$HOME/.config/sxhkd//scripts/changeVolume.sh m
 #### Mute end
 
 ### Volumen buttons end
