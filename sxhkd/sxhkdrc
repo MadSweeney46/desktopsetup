@@ -24,17 +24,17 @@ super + alt + Return
 #### Increase volume
 
 XF86AudioRaiseVolume
-	pactl set-sink-volume @DEFAULT_SINK@ +1000
+	$HOME/.config/sxhkd/scripts/changeVolume.sh +
 #### Increase volume end
 
 #### Decrease volume
 XF86AudioLowerVolume
-	pactl set-sink-volume @DEFAULT_SINK@ -1000
+	$HOME/.config/sxhkd/scripts/changeVolume.sh -
 #### Decrease volume end
 
 #### Mute
 XF86AudioMute
-	pactl set-sink-mute @DEFAULT_SINK@ toggle
+	$HOME/.config/sxhkd//scripts/changeVolume.sh m
 #### Mute end
 
 ### Volumen buttons end
