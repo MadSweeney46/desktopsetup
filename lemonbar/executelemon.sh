@@ -62,8 +62,13 @@ while read -r line ; do
       ;;
     memory*)
       memory="${line:6}"
+      ;;
+    audio*)
+      audio="${line:5}"
+
   esac
-  echo "%{l}${bspwm}%{c}${datetime}%{r}${memory} ${cpu} ${batterymonitor}"
+#%{A:reboot:} Click here to reboot %{A}
+echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
 
 done < "$fifo" | lemonbar \
   -g "$panel_dimensions" \
