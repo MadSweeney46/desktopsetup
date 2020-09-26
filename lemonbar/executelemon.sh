@@ -12,6 +12,8 @@ color_fg="$foreground"
 invert_bg="$darkgrey"
 invert_fg="$background"
 pacheck_color="$magenta"
+font_size="15"
+icon_size="15"
 
 #check if panel is already running
 if [ $(pgrep -cx lemonbar) -gt 0 ] ; then
@@ -67,14 +69,14 @@ while read -r line ; do
       audio="${line:5}"
 
   esac
-#%{A:reboot:} Click here to reboot %{A}
+
 echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
 
 done < "$fifo" | lemonbar \
   -g "$panel_dimensions" \
-  -f "$font_bar:size=$font_bar_size" \
-  -f "$backup_font:size=$font_bar_size" \
-  -f "$icon_font:size=$font_bar_size" \
+  -f "$font_bar:size=$font_size" \
+  -f "$backup_font:size=$font_size" \
+  -f "$icon_font:size=$icon_size" \
   -a 20 \
   -B "$color_bg" \
   -F "$color_fg" \
