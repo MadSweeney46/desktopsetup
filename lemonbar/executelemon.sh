@@ -14,11 +14,14 @@ invert_fg="$background"
 pacheck_color="$magenta"
 font_size="15"
 icon_size="15"
+font="Source Code Pro"
+icon_font_1="Font Awesome 5 Free Solid"
+icon_font_2="Font Awesome 5 Brands Regular"
 
 #check if panel is already running
 if [ $(pgrep -cx lemonbar) -gt 0 ] ; then
   printf "%s\n" "The panel is already running." >&2
-  exit 1
+#  exit 1
 fi
 
 #stop processes on kill
@@ -76,14 +79,18 @@ while read -r line ; do
 
   esac
 
-echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
+echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
 
-done < "$fifo" | lemonbar \
+done < "$fifo" | lemonbar -p \
   -g "$panel_dimensions" \
-  -f "$font_bar:size=$font_size" \
-  -f "$backup_font:size=$font_size" \
-  -f "$icon_font:size=$icon_size" \
+  -f "$font:size=$font_size" \
+  -f "$icon_font_1:size=$icon_size" \
+  -f "$icon_font_2:size=$icon_size" \
   -a 20 \
   -B "$color_bg" \
   -F "$color_fg" \
   | bash; exit
+
+  #-f "$backup_font:size=$font_size" \
+  #-f "${font}" \
+  #-f "${icon_font}" \ 

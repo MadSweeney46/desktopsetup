@@ -12,4 +12,4 @@ for desktop in $desktops; do
         fi
 done
 desktops=$(echo $desktops | sed "s/$focused/%{B$background}%{+u}_$focused\_%{-u}%{B-}/")
-echo "bspwm" $desktops | sed "s/_/ /g"
+echo "bspwm" "      " $desktops | sed "s/_/ /g"
