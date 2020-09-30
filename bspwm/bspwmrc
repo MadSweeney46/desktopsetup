@@ -52,7 +52,7 @@ if [ $mcounter -gt 0 ]; then
 	if [ $mcounter -eq 1 ]; then
 		echo "kleiner 1 = 1"
 		bspc monitor $(polybar --list-monitors | cut -d":" -f1) -d 1 2 3 4
-		$HOME/.config/desktopsetup/polybar/launchsinglepolybar.sh
+#		$HOME/.config/desktopsetup/polybar/launchsinglepolybar.sh
 	else
 		#echo "greater 1 mcounter=" $mcounter 
 		#echo "start"

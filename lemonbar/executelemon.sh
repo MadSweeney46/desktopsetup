@@ -4,14 +4,12 @@
 ###################
 
 panel_dimensions="1920x25+0+0"
-barpid="$$"
 
 #colors and fonts
-color_bg="$background"
-color_fg="$foreground"
-invert_bg="$darkgrey"
-invert_fg="$background"
-pacheck_color="$magenta"
+color_bg="#000000"
+color_fg="#ffffff"
+invert_bg="#fff000"
+invert_fg="#000fff"
 font_size="15"
 icon_size="15"
 font="Source Code Pro"
@@ -79,7 +77,7 @@ while read -r line ; do
 
   esac
 
-echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
+echo "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
 
 done < "$fifo" | lemonbar -p \
   -g "$panel_dimensions" \
