@@ -10,19 +10,24 @@ focused=$(bspc query -D --names -d focused)
 #focusedOccupied=$(echo "")
 
 for desktop in $desktops; do
-	desktop=$(echo "$desktop")
+	desktopMod=$(echo "$desktop")
         nodes=$(bspc query -N -d $desktop)
+        #echo $desktop
+        #echo $desktopMod
 	if [ ! -z "$nodes" ]; then
-		desktops=$(echo $desktops | sed "s/$desktop/%{F#ff0000}$desktop%{F-}/")
+		desktops=$(echo $desktops | sed "s/$desktop/%{F#ff0000}$desktopMod%{F-}/")
         fi
         
-        if [ ! $desktop -eq $focused ]; then
-          desktops=$(echo $desktops | sed "s/$desktop/%{B#d8caac}$desktop%{B}/")
-        #else
-          #desktops=$(echo $desktops | sed "s/$desktop/%{B#e39b7b}$desktop%{B}/")
+        if [ ! ${desktop:1} -eq ${focused:1} ]; then
+          desktops=$(echo $desktops | sed "s/$desktopMod/%{B#d8caac}$desktopMod%{B}/")
+          #echo "notfocused"
+        else
+          desktops=$(echo $desktops | sed "s/$desktopMod/%{B#e39b7b}$desktopMod%{B}/")
+          #echo "focused"
         fi
         #echo $desktops
 done
 desktops=$(echo $desktops | sed "s/ //g")
 desktops=$(echo $desktops | sed "s/$focused/%{+u}_$focused\_%{-u}/")
+desktops=$(echo $desktops | sed "s/x//g")
 echo "bspwm" $desktops | sed "s/_//g"
