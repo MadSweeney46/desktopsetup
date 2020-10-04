@@ -6,8 +6,8 @@
 panel_dimensions="1920x25+0+0"
 
 #colors and fonts
-color_bg="#000000"
-color_fg="#ffffff"
+color_bg="#323d43"
+color_fg="#576268"
 invert_bg="#fff000"
 invert_fg="#000fff"
 font_size="15"

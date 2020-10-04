@@ -1,3 +1,3 @@
 #!/bin/bash
 
-echo "$1%{+u}%{B$background} $2 %{B}%{-u}"
+echo "$1%{B#87c095} $2 %{B}"

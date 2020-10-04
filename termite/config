@@ -11,18 +11,18 @@ font = Source Code Pro 13
 
 [colors]
 #forest night colors start
-#a7c080
-#e68183
-#d3a0bc
-#d9bb80
-#89beba
-#e39b7b
-#d8caac
-#576268
-#3c474d
-#868d80
-#323d43 (background)
-#87c095
+#a7c080 
+#e68183 
+#d3a0bc 
+#d9bb80 
+#89beba 
+#e39b7b 
+#d8caac 
+#576268 
+#3c474d 
+#868d80 
+#323d43  (background)
+#87c095 
 #forest night colors end
 
 cursor = #a7c080

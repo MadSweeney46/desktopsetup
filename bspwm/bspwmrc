@@ -73,7 +73,7 @@ if [ $mcounter -gt 0 ]; then
 
 		k=1
 		for m in $(polybar --list-monitors | cut -d":" -f1); do
-			bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
+			bspc monitor $m -d x$k x$((k=k+2)) x$((k=k+2))
 			k=2
 		done
 		#polybar bar &
