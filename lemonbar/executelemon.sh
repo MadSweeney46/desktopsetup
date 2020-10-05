@@ -17,7 +17,7 @@ font_1="Source Code Pro"
 font_2=""
 icon_font_1="Font Awesome 5 Free Solid"
 icon_font_2="Font Awesome 5 Brands Regular"
-icon_font_3="PowerlineSymbols"
+icon_font_3="FreeMono"
 
 #check if panel is already running
 if [ $(pgrep -cx lemonbar) -gt 0 ] ; then
