@@ -1,3 +1,6 @@
 #!/bin/bash
 
-echo "$1%{B#87c095} $2 %{B}"
+echo -e "$1%{B#87c095} \ue0be  $2 '\ue0be' %{B}"
+
+
+
