@@ -12,11 +12,11 @@ invert_bg="#fff000"
 invert_fg="#000fff"
 font_size="15"
 icon_size="15"
-big_font_size="40"
+big_icon_size="17"
 font_1="Source Code Pro"
-font_2=""
-icon_font_1="Font Awesome 5 Free Solid"
-icon_font_2="Font Awesome 5 Brands Regular"
+icon_font_1="ProFont for Powerline"
+#icon_font_1="Font Awesome 5 Free Solid"
+icon_font_2="Powerline Extra Symbols"
 icon_font_3="FreeMono"
 
 #check if panel is already running
@@ -80,13 +80,13 @@ while read -r line ; do
 
   esac
 
-echo -e "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
+echo -e "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}%{O-4}"
 
 done < "$fifo" | lemonbar -p \
   -g "$panel_dimensions" \
   -f "$font_1:size=$font_size" \
   -f "$icon_font_1:size=$icon_size" \
-  -f "$icon_font_2:size=$icon_size" \
+  -f "$icon_font_2:size=$big_icon_size" \
   -f "$icon_font_3:size=$icon_size" \
   -a 20 \
   -B "$color_bg" \
