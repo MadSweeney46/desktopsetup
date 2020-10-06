@@ -80,7 +80,7 @@ while read -r line ; do
 
   esac
 
-echo -e "%{l}   \ue0be ${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
+echo -e "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A} ${memory} ${cpu} ${batterymonitor}"
 
 done < "$fifo" | lemonbar -p \
   -g "$panel_dimensions" \
