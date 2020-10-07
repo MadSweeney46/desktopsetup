@@ -1,4 +1,7 @@
 #!/usr/bin/bash
 
 #Define the battery
-echo $(./format.sh "batterymonitor" $(acpi --battery | cut -d, -f2))
+batteryLvl=$(acpi --battery | cut -d, -f2)
+if [[ $batteryLvl != "" ]]; then
+  echo $(./format.sh "batterymonitor" $batteryLvl)
+fi
