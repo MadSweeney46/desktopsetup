@@ -5,37 +5,30 @@ desktops=$(bspc query -D --names | tac )
 focused=$(bspc query -D --names -d focused)
 visibleDs=$(bspc query -D -d .active --names)
 occupiedDs=$(bspc query -D -d .occupied --names)
-#empty=$(echo "")
-#focused=$(echo "")
-#focusedEmpty=$(echo "")
-#focusedOccupied=$(echo "")
 bspwmdesktops=""
-#echo desktops
-#echo $desktops
 prevColor=#323d43
 curColor=""
+
+format_bspwm_ws () {
+  curColor=$1
+  bspwmdesktops="%{B$curColor}$2%{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B}$bspwmdesktops"
+  prevColor=$1
+}
+
 for desktop in $desktops; do
-        if [ ! -z "$(echo $visibleDs | grep $desktop)" ]; then
-          if [ ${desktop:1} -eq ${focused:1} ]; then
-            curColor=#87c095            
-            bspwmdesktops="%{B$curColor}$desktop %{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B} $bspwmdesktops"
-            prevColor=#87c095
-          else
-            curColor=#d8caac
-            bspwmdesktops="%{B$curColor}$desktop %{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B} $bspwmdesktops"
-            prevColor=#d8caac
-          fi
-        elif [ ! -z "$(echo $occupiedDs | grep $desktop)" ]; then
-          curColor=#e39b7b
-          bspwmdesktops="%{B$curColor}$desktop %{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B} $bspwmdesktops"
-          prevColor=#e39b7b
-        else
-          curColor=#323d43
-          bspwmdesktops="%{B$curColor}$desktop %{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B} $bspwmdesktops"
-          prevColor=#323d43
-        fi
-        #echo $bspwmdesktops
-      done
+  if [ ! -z "$(echo $visibleDs | grep $desktop)" ]; then
+    if [ ${desktop:1} -eq ${focused:1} ]; then
+      format_bspwm_ws "#87c095" "$desktop"
+    else
+      format_bspwm_ws "#d8caac" "$desktop"
+    fi
+  elif [ ! -z "$(echo $occupiedDs | grep $desktop)" ]; then
+    format_bspwm_ws "#e39b7b" "$desktop"
+  else
+    format_bspwm_ws "#323d43" "$desktop"
+  fi
+  #echo $bspwmdesktops
+done
 
 #bspwmdesktops=$(echo $bspwmdesktops | sed "s/ %{/%{/g")
 
@@ -44,5 +37,4 @@ for desktop in $desktops; do
 #desktops=$(echo $desktops | sed "s/$focused/%{+u}_$focused\_%{-u}/")
 bspwmdesktops=$(echo $bspwmdesktops | sed "s/x//g")
 echo "bspwm" $bspwmdesktops
-
 
