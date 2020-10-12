@@ -9,9 +9,21 @@ bspwmdesktops=""
 prevColor=#323d43
 curColor=""
 
+lemon_icon () {
+lemon_arrow_b_color="#323d43"
+  if [ "$focused" = "x1" ]; then
+    lemon_arrow_b_color="#87c095"
+  elif [[ ${visibleDs[*]} =~ "x1" ]]; then
+    lemon_arrow_b_color="#d8caac"
+  elif [[ ${occupiedDs[*]} =~ "x1" ]]; then
+    lemon_arrow_b_color="#e39b7b"
+  fi
+  bspwmdesktops="%{B#d9bb80} \uf094 %{B}%{B$lemon_arrow_b_color}%{F#d9bb80}\uE0B0%{F}%{B}"$bspwmdesktops
+}
+
 format_bspwm_ws () {
   curColor=$1
-  bspwmdesktops="%{B$curColor}$2%{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B}$bspwmdesktops"
+  bspwmdesktops="%{B$curColor}   $2   %{B}%{B$prevColor}%{F$curColor}\uE0B0%{F}%{B}$bspwmdesktops"
   prevColor=$1
 }
 
@@ -36,5 +48,6 @@ done
 #desktops=$(echo $desktops | sed "s///g")
 #desktops=$(echo $desktops | sed "s/$focused/%{+u}_$focused\_%{-u}/")
 bspwmdesktops=$(echo $bspwmdesktops | sed "s/x//g")
+lemon_icon
 echo "bspwm" $bspwmdesktops
 
