@@ -12,7 +12,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 	"Auto pairs for '(' '[' '{'
 	Plug 'jiangmiao/auto-pairs'
 	"Hex Color
-	Plug 'chrisbra/colorizer'
+	Plug 'norcalli/nvim-colorizer.lua'
 	"Powerline for vim
 	Plug 'vim-airline/vim-airline'
 	"Powerline themes for vim

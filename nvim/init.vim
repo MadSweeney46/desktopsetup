@@ -44,18 +44,13 @@ map gl :bp<cr>
 nnoremap <Leader>o o<Esc>
 nnoremap <Leader>O O<Esc>
 
-"something with the colorizer plugin
-:let g:colorizer_auto_color = 1
-
-
-
 "Closes the vim editor if the only open window is nerdtree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "Closes the vim editor if the only open window is nerdtree end
-"Vim Ocean-Next Theme
-if (has("termguicolors"))
- set termguicolors
-endif
+
+"Colorizer and general colortheme
+set termguicolors
+lua require'colorizer'.setup()
 
 " Theme
 syntax enable
@@ -64,6 +59,8 @@ let g:forest_night_enable_italic = 1
 "let g:forest_night_diagnostic_line_highlight = 1
 let g:airline_theme = 'forest_night'
 colorscheme forest-night
+
+"Colorizer and general colortheme end
 
 
 "Vim Powerline theme
