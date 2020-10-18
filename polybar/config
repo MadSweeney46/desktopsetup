@@ -87,12 +87,12 @@ ws-icon-5 = x6;
 ws-icon-default = ♟
 
 
-label-focused = "%icon% "
+label-focused = "%name% "
 label-focused-background = ${colors.background-alt}
 label-focused-underline=
 label-focused-padding = 2
 
-label-dimmed = "%icon% " 
+label-dimmed = "%name% " 
 label-dimmed-underline = 
 label-dimmed-focused-background = #d8caac
 

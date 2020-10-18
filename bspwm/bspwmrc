@@ -51,7 +51,7 @@ done
 if [ $mcounter -gt 0 ]; then
 	if [ $mcounter -eq 1 ]; then
 		echo "kleiner 1 = 1"
-		bspc monitor $(polybar --list-monitors | cut -d":" -f1) -d x1 x2 x3 x4
+		bspc monitor $(polybar --list-monitors | cut -d":" -f1) -d 1 2 3 4
 #		$HOME/.config/desktopsetup/polybar/launchsinglepolybar.sh
 	else
 		#echo "greater 1 mcounter=" $mcounter 
@@ -73,7 +73,7 @@ if [ $mcounter -gt 0 ]; then
 
 		k=1
 		for m in $(polybar --list-monitors | cut -d":" -f1); do
-			bspc monitor $m -d x$k x$((k=k+2)) x$((k=k+2))
+			bspc monitor $m -d $k $((k=k+2)) $((k=k+2))
 			k=2
 		done
 		#polybar bar &

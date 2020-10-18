@@ -3,8 +3,8 @@
 desktopsAnz=($(bspc query -D --names))
 currentDesktop=$(bspc query -D -d --names)
   
-currentDesktop=${currentDesktop:1}
-desktopsAnz="${desktopsAnz[${#desktopsAnz[@]}-1]:1}"
+currentDesktop=${currentDesktop}
+desktopsAnz="${desktopsAnz[${#desktopsAnz[@]}-1]}"
   
 if [ $1 == "+" ]; then
   if (( $currentDesktop < $desktopsAnz ));then
@@ -19,4 +19,4 @@ elif [ $1 == "-" ]; then
     ((currentDesktop=$desktopsAnz ))
     fi                                                                                                                                                                             
 fi
-echo x$currentDesktop
+echo $currentDesktop
