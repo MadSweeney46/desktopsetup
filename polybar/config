@@ -10,10 +10,8 @@
 ;==========================================================
 
 [colors]
-;background = ${xrdb:color0:#222}
 background = #323d43
 background-alt = #a7c080
-;foreground = ${xrdb:color7:#222}
 foreground = #dfdfdf
 foreground-alt = #555
 primary = #ffb52a
@@ -44,13 +42,11 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Free Solid:style=Solid:size=15
-font-4 = Font Awesome 5 Free Regular:style=Regular
-font-5 = Powerline Extra Symbols:style=Regular
-font-6 = 3270Medium Nerd Font:style=Medium:size=15;3
+font-0 = Source Code Pro:style=Regular:size=15;3
+font-1 = Font Awesome 5 Free Solid:style=Solid:size=15
+font-2 = Font Awesome 5 Free Regular:style=Regular
+font-3 = Powerline Extra Symbols:style=Regular
+font-4 = 3270Medium Nerd Font:style=Medium:size=15;3
 
 modules-left = bspwm
 modules-center = datetime
@@ -82,22 +78,22 @@ pin-workspaces = false
 label-focused = " 綠"
 label-focused-foreground = ${colors.background-alt}
 label-focused-underline=
-label-focused-padding = 2
+label-focused-padding = 1
 
 label-dimmed-underline = 
 label-dimmed-focused-foreground = #d8caac
 
 label-occupied = " 綠"
-label-occupied-padding = 2
+label-occupied-padding = 1
 label-occupied-foreground = #e39b7b
 
 label-urgent = " 﫜"
-label-urgent-background = 
+label-urgent-background = 1
 label-urgent-foreground = #e68183
 
 label-empty = " 祿"
 label-empty-foreground = #576268 
-label-empty-padding = 2
+label-empty-padding = 1
 label-empty-background = background
 
 ; Separator in between workspaces
@@ -167,9 +163,8 @@ date-alt =
 time = %H:%M
 time-alt = 
 
-format-prefix = 
+format-prefix = "  "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #0a6cf5
 
 label = %date% %time%
 
@@ -177,10 +172,10 @@ label = %date% %time%
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL
+label-volume = 
 label-volume-foreground = ${root.foreground}
 
-format-muted-prefix = " "
+format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
 label-muted = sound muted
 
