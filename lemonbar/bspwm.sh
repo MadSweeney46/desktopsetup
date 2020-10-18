@@ -18,7 +18,7 @@ lemon_arrow_b_color="#323d43"
   elif [[ ${occupiedDs[*]} =~ "x1" ]]; then
     lemon_arrow_b_color="#e39b7b"
   fi
-  bspwmdesktops="%{B#d9bb80} \uf094 %{B}%{B$lemon_arrow_b_color}%{F#d9bb80}\uE0B0%{F}%{B}"$bspwmdesktops
+  bspwmdesktops="%{B#d9bb80} %{T2}%{T} %{B}%{B$lemon_arrow_b_color}%{F#d9bb80}\uE0B0%{F}%{B}"$bspwmdesktops
 }
 
 format_bspwm_ws () {
