@@ -23,7 +23,7 @@ alert = #bd2c40
 [bar/bar0]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 30
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 6.0
@@ -47,10 +47,10 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
-font-3 = Font Awesome 5 Free Solid:style=Solid
+font-3 = Font Awesome 5 Free Solid:style=Solid:size=15
 font-4 = Font Awesome 5 Free Regular:style=Regular
 font-5 = Powerline Extra Symbols:style=Regular
-font-6 = 3270Medium Nerd Font Mono:style=Medium
+font-6 = 3270Medium Nerd Font:style=Medium:size=15;3
 
 modules-left = bspwm
 modules-center = datetime
@@ -91,9 +91,9 @@ label-occupied = " 綠"
 label-occupied-padding = 2
 label-occupied-foreground = #e39b7b
 
-label-urgent = " 﫭"
+label-urgent = " 﫜"
 label-urgent-background = 
-label-occupied-foreground = #e68183
+label-urgent-foreground = #e68183
 
 label-empty = " 祿"
 label-empty-foreground = #576268 
