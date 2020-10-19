@@ -28,6 +28,14 @@ pgrep ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow || ~/.config/desktop
 
 ##Autostart end
 
+bspc config border_width         2
+bspc config window_gap          12
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+bspc config top_padding 0
+
 #bspc monitor -d I II III IV V VI VII VIII IX X
 #bspc monitor -d 1 2 3
 ##bspc monitor eDP1 -d I II III IV
@@ -42,6 +50,8 @@ pgrep ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow || ~/.config/desktop
 #we multiply 3 by the number of monitors start at 1
 #we add a desktop to a monitor, increase the counter and switch the monitor
 #if we are at the last monitor we check if its the last monitor in this array. If thats the case
+
+$HOME/.config/desktopsetup/polybar/singlepolybar.sh
 
 mcounter=0
 for m in $(polybar --list-monitors | cut -d":" -f1); do
@@ -81,21 +91,3 @@ if [ $mcounter -gt 0 ]; then
 		###Polybar end
 	fi
 fi
-
-
-
-
-
-bspc config border_width         2
-bspc config window_gap          12
-
-bspc config split_ratio          0.52
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
-
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-
