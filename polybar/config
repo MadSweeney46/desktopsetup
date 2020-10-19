@@ -43,9 +43,9 @@ module-margin-left = 1
 module-margin-right = 2
 
 font-0 = Source Code Pro:style=Regular:size=15;3
-font-1 = Font Awesome 5 Free Solid:style=Solid:size=15
+font-1 = Font Awesome 5 Free Solid:style=Solid:size=15;3
 font-2 = Font Awesome 5 Free Regular:style=Regular
-font-3 = Powerline Extra Symbols:style=Regular
+font-3 = Powerline Extra Symbols:style=Regular;2
 font-4 = 3270Medium Nerd Font:style=Medium:size=15;3
 
 modules-left = bspwm
@@ -75,7 +75,7 @@ cursor-scroll = ns-resize
 type = internal/bspwm
 pin-workspaces = false
 
-label-focused = " 綠"
+label-focused = "綠"
 label-focused-foreground = ${colors.background-alt}
 label-focused-underline=
 label-focused-padding = 1
@@ -83,15 +83,15 @@ label-focused-padding = 1
 label-dimmed-underline = 
 label-dimmed-focused-foreground = #d8caac
 
-label-occupied = " 綠"
+label-occupied = "綠"
 label-occupied-padding = 1
 label-occupied-foreground = #e39b7b
 
-label-urgent = " 﫜"
+label-urgent = "﫜"
 label-urgent-background = 1
 label-urgent-foreground = #e68183
 
-label-empty = " 祿"
+label-empty = "祿"
 label-empty-foreground = #576268 
 label-empty-padding = 1
 label-empty-background = background
@@ -102,17 +102,17 @@ label-empty-background = background
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #f90000
+format-underline = 
 label = %percentage:2%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
-format-underline = #4bffdc
+format-underline = 
 label = %percentage_used%%
 
 [module/wlan]
@@ -172,7 +172,7 @@ label = %date% %time%
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = 
+label-volume = VOL
 label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
@@ -186,7 +186,7 @@ bar-volume-foreground-2 = #55aa55
 bar-volume-foreground-3 = #55aa55
 bar-volume-foreground-4 = #55aa55
 bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-6 = #e68183
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -235,7 +235,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = 
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${self.format-underline}
 
@@ -243,9 +243,9 @@ label = %temperature-c%
 label-warn = %temperature-c%
 label-warn-foreground = ${colors.secondary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
 ramp-foreground = ${colors.foreground-alt}
 
 [module/powermenu]
