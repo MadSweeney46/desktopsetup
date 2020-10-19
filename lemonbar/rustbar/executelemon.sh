@@ -11,8 +11,8 @@ color_fg="#576268"
 invert_bg="#fff000"
 invert_fg="#000fff"
 font_size="15"
-icon_size="18"
-big_icon_size="19"
+icon_size="10"
+big_icon_size="15"
 font_1="Source Code Pro"
 #icon_font_1="ProFont for Powerline"
 icon_font_1="Font Awesome 5 Free Solid"
@@ -33,7 +33,7 @@ fi
 
 #echo -e "%{l}${bspwm}%{c}${datetime}%{r}%{A:./lemonapplauncher.sh "pavucontrol":}${audio}%{A}${memory}${cpu}${batterymonitor}%{O-4}"
 
-./main | lemonbar -p \
+./main.sh | lemonbar -p \
   -g "$panel_dimensions" \
   -f "$font_1:size=$font_size" \
   -f "$icon_font_1:size=$icon_size" \

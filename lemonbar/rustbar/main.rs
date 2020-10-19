@@ -1,3 +1,3 @@
 fn main(){
-    println!("Rustbar ")
+    println!("Rustbar %{T1}%{T}")
 }
