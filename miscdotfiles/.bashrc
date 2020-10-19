@@ -28,6 +28,11 @@ POWERLINE_BASH_SELECT=1
 #. /home/jan/.local/lib/python3.8/site-packages/powerline/bindings/bash/powerline.sh
 ### bash powerline end
 
+### z.lua
+eval "$(lua $HOME/git/z.lua/z.lua --init bash)"
+### z.lua end
+
+
 PS1='[\u@\h \W]\$ '
 
 function _update_ps1() {
