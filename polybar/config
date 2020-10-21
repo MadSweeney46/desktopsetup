@@ -21,7 +21,6 @@ icons = #d8caac
 
 [bar/bar0]
 ;monitor = ${env:MONITOR:HDMI-1}
-monitor = HDMI-A-0
 width = 100%
 height = 30
 ;offset-x = 1%
@@ -199,7 +198,7 @@ bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.icons}
 
-[module/pulseaudio]
+[module/pulseaudio-old]
 type = internal/pulseaudio
 
 ; Sink to be used, if it exists (find using `pacmd list-sinks`, name field)
@@ -246,6 +245,19 @@ label-foreground = ${colors.icons}
 click-right = pavucontrol &
 ; click-middle = 
 
+[module/pulseaudio]
+type = custom/script
+tail = true
+label= %output%
+
+exec = ~/.config/polybar/scripts/pulseaudio-control.bash listen
+click-right = exec pavucontrol &
+click-left = ~/.config/polybar/scripts/pulseaudio-control.bash togmute
+click-middle = ~/.config/polybar/scripts/pulseaudio-control.bash next-sink
+scroll-up = ~/.config/polybar/scripts/pulseaudio-control.bash up
+scroll-down = ~/.config/polybar/scripts/pulseaudio-control.bash down
+label-padding = 
+label-foreground = ${colors.foreground}
 
 [module/battery]
 type = internal/battery
