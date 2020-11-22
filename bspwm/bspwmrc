@@ -36,6 +36,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config top_padding 0
 
+bspc rule -a Emacs state = tiled
+
 $HOME/.config/desktopsetup/polybar/singlepolybar.sh
 
 mcounter=0
