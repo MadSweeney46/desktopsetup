@@ -18,6 +18,7 @@ alias ls='ls --color=auto'
 alias v="nvim"
 alias :q='exit'
 alias grep='rg'
+alias d='emacs'
 ### Alias end
 
 
@@ -43,4 +44,4 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
