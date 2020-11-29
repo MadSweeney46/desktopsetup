@@ -15,6 +15,7 @@
 :g "C-ö" 'evil-escape
 :n "ö" 'evil-ex
 :n "TT" 'neotree-toggle
+:n "SPC f w" 'evil-avy-goto-char-timer
  )
 
 
