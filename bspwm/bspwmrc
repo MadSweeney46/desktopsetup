@@ -20,6 +20,15 @@ while pgrep -u $UID -x sxhkd >/dev/null; do sleep 1; done
 sxhkd &
 ###sxhkd end
 
+###picom
+picom &
+###picom end
+
+
+###Turn numlock on
+numlockx on &
+###Turn numlock on end
+
 ###bspwm swallow script
 
 pgrep ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow || ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow &

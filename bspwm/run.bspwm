@@ -6,12 +6,5 @@ nitrogen --restore &
 ##Set de keyboard layout
 setxkbmap de &
 
-##Turn numlock on
-numlockx on &
-
-##Picom
-###Turn Vsync on
-picom --vsync &
-
 ##Run bspwm
 bspwm
