@@ -3,11 +3,11 @@
 #
 
 # terminal emulator
-super + Return
+mod1 + Return
 	termite
 
 # program launcher
-super + @space
+mod1 + @space
         rofi -show run -display-run 'Run: '
 
 # make sxhkd reload its configuration files:
@@ -70,12 +70,12 @@ XF86MonBrightnessDown
 
 
 ##Move client to prev/next desktop and focus on it
-super + shift + {j,k}
+mod1 + shift + {j,k}
 	bspc node -d $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {-,+} ) -f
 ##Move client to prev/next desktop and focus on it end
 
 ##Switch to prev/next desktop
-super + {j,k}
+mod1 + {j,k}
 	bspc desktop $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {-,+} ) -f
 ##Switch to prev/next desktop end
 
@@ -87,8 +87,8 @@ super + alt + {q,r}
 super + {_,shift + }w
 	bspc node -{c,k}
 
-# alternate between the tiled and monocle layout
-super + m
+# alternate between the tiled and
+mod1 + m
 	bspc desktop -l next
 
 
@@ -101,8 +101,8 @@ super + g
 #
 
 # focus the node in the given direction
-super + ctrl + {j,k,l,odiaeresis}
-	bspc node -f {west,east,north,south}
+super + mod1 + {h,j,k,l}
+	bspc node -f {west,south,north,east}
 
 # focus the node for the given path jump
 super + {p,b,comma,period}
