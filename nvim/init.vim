@@ -243,7 +243,7 @@ nnoremap <leader>fel :<C-u>execute "bd! " "output:///flutter-dev"<cr>
 nnoremap <leader>fd :<C-u>CocCommand flutter.dev.openDevToolsProfiler<cr>
 
 "Startify stuff start
-let g:startify_bookmarks = [ {'f': '~/development/projects/life_manager/lib/'} ]
+let g:startify_bookmarks = [ {'f': '~/development/projects/flutter/life_manager/lib/'} ]
 
 "Updates Startify page on the fly and not only, when Vim exits
 let g:startify_update_oldfiles = 0
