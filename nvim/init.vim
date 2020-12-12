@@ -12,6 +12,10 @@ source $HOME/.config/nvim/vim-plug/plugins.vim
 :let mapleader = "\<Space>"
 "Remap Colon key to ö
 noremap ö :
+
+"Map C-c to leader-ö
+imap <Leader>ö <C-c>
+
 "Fix indentation. The default is just too much
 set expandtab
 set shiftwidth=2
@@ -31,10 +35,10 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 "Split navigation shortcuts
 "Remapped from <C-w>+{split direction key} to <C-{split direction key}
 "This comes in handy for e.g. NerdTree Navigation
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <Leader>wh <C-w>h
+map <Leader>wj <C-w>j
+map <Leader>wk <C-w>k
+map <Leader>wl <C-w>l
 
 "Shortcuts for switching between buffers
 map gh :bn<cr>
