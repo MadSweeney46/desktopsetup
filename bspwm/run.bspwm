@@ -1,5 +1,11 @@
 #!/bin/bash
 
+###xrandr monitor placement
+xrandr --output DVI-D-0 --left-of HDMI-A-0
+xrandr --output DVI-D-0 --left-of HDMI-A-2
+###xrandr monitor placement
+
+
 ##Set wallpaper
 nitrogen --restore &
 

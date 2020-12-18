@@ -29,6 +29,7 @@ picom &
 numlockx on &
 ###Turn numlock on end
 
+
 ###bspwm swallow script
 
 pgrep ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow || ~/.config/desktopsetup/gitstuff/bspswallow/bspswallow &
