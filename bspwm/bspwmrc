@@ -21,7 +21,7 @@ sxhkd &
 ###sxhkd end
 
 ###picom
-picom &
+picom --vsync &
 ###picom end
 
 
