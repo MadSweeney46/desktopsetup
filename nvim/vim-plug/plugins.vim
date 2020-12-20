@@ -40,4 +40,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'kevinoid/vim-jsonc'
         "Adds commas or semicolons to the end of the line
         Plug 'lfilho/cosco.vim'
+        "Automatic color generation extension for vim
+        Plug 'dylanaraps/wal.vim'
         call plug#end()

@@ -53,8 +53,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 "Closes the vim editor if the only open window is nerdtree end
 
 "Colorizer and general colortheme
-set termguicolors
-lua require'colorizer'.setup()
+colorscheme wal
+"lua require'colorizer'.setup()
 
 " Theme
 syntax enable
@@ -62,7 +62,6 @@ let g:forest_night_enable_italic = 1
 "let g:forest_night_disable_italic_comment = 1
 "let g:forest_night_diagnostic_line_highlight = 1
 let g:airline_theme = 'forest_night'
-colorscheme forest-night
 
 "Colorizer and general colortheme end
 

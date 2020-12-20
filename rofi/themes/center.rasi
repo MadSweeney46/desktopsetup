@@ -4,21 +4,16 @@
  * DESCRIPTION: This is a centered prompt.
  * AUTHOR: Derek Taylor (DT)
  */
+ @import "~/.cache/wal/colors-rofi-dark"
 
 * {
-    background-color:            #282c34;
-    border-color:                #282c34;
-    text-color:                  #bbc2cf;
+    border-color:                @foreground;
+    text-color:                  @foreground;
     font:                        "SauceCodePro Nerd Font Mono 9";
     prompt-font:                 "Ubuntu Bold 9";
-    prompt-background:           #51afef;
-    prompt-foreground:           #282c34;
+    prompt-background:           @background;
+    prompt-foreground:           @foreground;
     prompt-padding:              4px;
-    alternate-normal-background: #1c1f24;
-    alternate-normal-foreground: @text-color;
-    selected-normal-background:  #ae3f3e;
-    selected-normal-foreground:  #ffffff;
-    spacing:                     3;
 }
 #window {
     border:  1;
@@ -82,5 +77,10 @@
     text-color:       @prompt-foreground;
     font:             @prompt-font;
     border-radius:    2px;
+}
+
+
+#textbox-prompt-colon {
+str: "";
 }
 

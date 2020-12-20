@@ -45,4 +45,9 @@ PS1='[\u@\h \W]\$ '
 #    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 #fi
 
+##Terminal pywall colors
+(cat ~/.cache/wal/sequences &)
+##TTY pywall colors
+source ~/.cache/wal/colors-tty.sh
+
 export PATH="$HOME/.emacs.d/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
