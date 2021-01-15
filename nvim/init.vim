@@ -52,16 +52,17 @@ nnoremap <Leader>O O<Esc>
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 "Closes the vim editor if the only open window is nerdtree end
 
-"Colorizer and general colortheme
-colorscheme wal
-"lua require'colorizer'.setup()
-
 " Theme
+" Colorizer and general colortheme
+colorscheme dracula
+set termguicolors
+lua require'colorizer'.setup()
 syntax enable
-let g:forest_night_enable_italic = 1
+
+"let g:forest_night_enable_italic = 1
 "let g:forest_night_disable_italic_comment = 1
 "let g:forest_night_diagnostic_line_highlight = 1
-let g:airline_theme = 'forest_night'
+"let g:airline_theme = 'forest_night'
 
 "Colorizer and general colortheme end
 
