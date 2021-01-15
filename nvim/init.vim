@@ -54,6 +54,8 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 
 "Colorizer and general colortheme
 colorscheme wal
+
+
 "lua require'colorizer'.setup()
 
 " Theme

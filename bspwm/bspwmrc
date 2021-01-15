@@ -21,7 +21,7 @@ sxhkd &
 ###sxhkd end
 
 ###picom
-picom --vsync &
+picom --vsync --experimental-backends &
 ###picom end
 
 
