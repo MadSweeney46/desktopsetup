@@ -42,4 +42,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
         Plug 'lfilho/cosco.vim'
         "Automatic color generation extension for vim
         Plug 'dylanaraps/wal.vim'
+        "Dracula theme
+        Plug 'dracula/vim',{'as':'dracula'}
+        "Code commenting
+        Plug 'tpope/vim-commentary'
         call plug#end()
