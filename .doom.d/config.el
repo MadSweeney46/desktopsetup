@@ -18,6 +18,8 @@
 :n "SPC f w" 'evil-avy-goto-char-timer
  )
 
+(lsp-treemacs-sync-mode 1)
+
 
 ;;Setting the font and its size
 (setq doom-font (font-spec :family "Source Code Pro" :size 15)
@@ -45,7 +47,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
-(setq doom-theme 'xresources-theme)
+(setq doom-theme 'doom-dracula)
 
 ;; If you use `org' and don't want your org files in the default location below,
 ;; change `org-directory'. It must be set before org loads!

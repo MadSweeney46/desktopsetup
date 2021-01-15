@@ -51,3 +51,7 @@
 (package! ewal)
 
 (package! xresources-theme)
+
+(package! lsp-ui)
+(package! lsp-treemacs)
+(package! company)
