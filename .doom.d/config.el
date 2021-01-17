@@ -16,6 +16,8 @@
 :n "ö" 'evil-ex
 :n "TT" 'neotree-toggle
 :n "SPC f w" 'evil-avy-goto-char-timer
+:n "SPC f r" 'lsp-ui-peek-find-references
+:n "SPC g t" 'lsp-ui-peek-find-definitions
  )
 
 (lsp-treemacs-sync-mode 1)
@@ -30,6 +32,21 @@
 ;; clients, file templates and snippets.
 (setq user-full-name "Jan Walewski"
       user-mail-address "jan.walewski@hotmail.de")
+
+
+
+;; Highlighting setting
+;; !!! Farben können per Hexadezimalcode angegeben werden oder mit Farbennamen
+;; Für Farbennamen den Befehl 'read-color' ausführen
+
+(setq org-emphasis-alist
+      '(("=" (bold :foreground "dark red"))
+        ("+" (:strike-through nil :foreground "dark orange"))
+        )
+      )
+
+(setq org-hide-emphasis-markers t)
+
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom. Here
 ;; are the three important ones:
