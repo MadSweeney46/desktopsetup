@@ -36,7 +36,7 @@ line-size = 3
 line-color = 
 
 border-size = 2
-border-color = #d8caac
+border-color = ${colors.foreground} 
 
 padding-left = 0
 padding-right = 2
