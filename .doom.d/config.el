@@ -20,6 +20,19 @@
 :n "SPC g t" 'lsp-ui-peek-find-definitions
  )
 
+(setq evil-vsplit-window-right t
+      evil-split-window-below t)
+
+(defadvice! prompt-for-buffer (&rest _)
+  :after '(evil-window-split evil-window-vsplit)
+  (+ivy/switch-buffer))
+
+(setq +ivy-buffer-preview t)
+
+//word wrap at the end of window
+(global-visual-line-mode t)
+
+
 (lsp-treemacs-sync-mode 1)
 
 
