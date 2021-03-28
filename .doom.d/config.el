@@ -29,7 +29,7 @@
 
 (setq +ivy-buffer-preview t)
 
-//word wrap at the end of window
+;;word wrap at the end of window
 (global-visual-line-mode t)
 
 
