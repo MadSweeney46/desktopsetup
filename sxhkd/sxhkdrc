@@ -71,12 +71,12 @@ XF86MonBrightnessDown
 
 ##Move client to prev/next desktop and focus on it
 mod1 + shift + {j,k}
-	bspc node -d $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {-,+} ) -f
+	bspc node -d $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {+,-} ) -f
 ##Move client to prev/next desktop and focus on it end
 
 ##Switch to prev/next desktop
 mod1 + {j,k}
-	bspc desktop $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {-,+} ) -f
+	bspc desktop $( $HOME/.config/sxhkd/scripts/getNextOrPrevDesktop.sh {+,-} ) -f
 ##Switch to prev/next desktop end
 
 # quit/restart bspwm
