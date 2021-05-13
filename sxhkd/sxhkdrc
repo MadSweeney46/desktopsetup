@@ -4,7 +4,7 @@
 
 # terminal emulator
 mod1 + Return
-	termite
+	alacritty
 
 # program launcher
 mod1 + @space

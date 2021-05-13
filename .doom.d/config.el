@@ -54,6 +54,7 @@
 
 (setq org-emphasis-alist
       '(("=" (bold :foreground "dark red"))
+        ("-" (:foreground "dark orange"))
         ("+" (:strike-through nil :foreground "dark orange"))
         )
       )
