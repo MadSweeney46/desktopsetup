@@ -50,4 +50,5 @@ PS1='[\u@\h \W]\$ '
 ##TTY pywall colors
 source ~/.cache/wal/colors-tty.sh
 
+export CHROME_EXECUTABLE=/usr/bin/chromium
 export PATH="$HOME/.emacs.d/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
