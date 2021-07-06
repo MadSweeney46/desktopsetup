@@ -52,7 +52,7 @@ font-4 = 3270Medium Nerd Font:style=Medium:size=15;3
 
 modules-left = bspwm
 modules-center = datetime
-modules-right = pulseaudio memory cpu wlan battery temperature powermenu
+modules-right = pulseaudio memory cpu battery backlight powermenu
 
 tray-position = right
 tray-padding = 
@@ -87,7 +87,7 @@ label-dimmed-focused-foreground = #d8caac
 
 label-occupied = "綠"
 label-occupied-padding = 1
-label-occupied-foreground = #e39b7b
+label-occupied-foreground = ${colors.icons}
 
 label-urgent = "﫜"
 label-urgent-background = 1
@@ -100,6 +100,19 @@ label-empty-background = background
 
 ; Separator in between workspaces
 ; label-separator = |
+
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
+use-actual-brightness = true
+format = <ramp> <label>
+label = %percentage%%
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-3 = 
+ramp-4 = 
+ramp-foreground = ${colors.icons}
 
 [module/cpu]
 type = internal/cpu
@@ -267,29 +280,24 @@ adapter = ADP1
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
-format-charging-underline = #ffb52a
-
 format-discharging = <animation-discharging> <label-discharging>
-format-discharging-underline = ${self.format-charging-underline}
-
-format-full-prefix = " "
+format-full-prefix = ""
 format-full-prefix-foreground = ${colors.icons}
-format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
 ramp-capacity-foreground = ${colors.icons}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
 animation-charging-foreground = ${colors.icons}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
 animation-discharging-foreground = ${colors.icons}
 animation-discharging-framerate = 750
 
