@@ -29,7 +29,7 @@
     <property name="AndroidInitConfigurator.V1" value="true" />
     <property name="AndroidInitConfigurator.V3" value="true" />
     <property name="AndroidInitConfigurator.V5" value="true" />
-    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.6053333" />
+    <property name="CommitChangeListDialog.DETAILS_SPLITTER_PROPORTION_2" value="0.80455154" />
     <property name="DART_CHECK_SDK_UPDATE_KEY" value="DoNotCheck" />
     <property name="DART_LAST_SDK_CHECK_KEY" value="1583312947947" />
     <property name="DART_SDK_KNOWN_PATHS" value="$USER_HOME$/programming/languages/dart/dart-sdk" />
@@ -38,27 +38,32 @@
     <property name="FLUTTER_LAST_SURVEY_CONTENT_CHECK_KEY" value="1591368891748" />
     <property name="FLUTTER_LAST_SURVEY_PROMPT_KEY" value="1590578730331" />
     <property name="FLUTTER_SDK_KNOWN_PATHS" value="$USER_HOME$/programming/languages/flutter/flutter_linux_v1.9.1+hotfix.5-stable/flutter&#10;/home/jan/development/languages+devtools/flutter" />
+    <property name="InstalledPluginsSearchHistory" value="sdk&#10;sd&#10;git" />
     <property name="KEYMAP" value="left&#10;auto&#10;auto-import&#10;Alt+Eingabe&#10;tab" />
     <property name="LayoutCode.optimizeImports" value="false" />
     <property name="LayoutCode.processChangedText" value="false" />
     <property name="LayoutCode.rearrangeEntriesDart" value="false" />
-    <property name="MarketplacePluginsSearchHistory" value="/tag:Keymap&#10;vim&#10;v&#10;ace&#10;kotlin" />
+    <property name="MarketplacePluginsSearchHistory" value="github&#10;githu&#10;git&#10;/organization:Tabnine&#10;git /sortBy:updated" />
     <property name="MobileminApi" value="25" />
+    <property name="NonModalCommitPromotionState" value="SHOWN" />
+    <property name="PluginConfigurable.selectionTab" value="1" />
     <property name="SAVED_ANDROID_NPW_ASKED_LANGUAGE" value="true" />
     <property name="SAVED_ANDROID_NPW_LANGUAGE" value="Kotlin" />
     <property name="SAVED_ANDROID_PACKAGE" value="com.example" />
-    <property name="SettingsSearchHistory" value="update" />
+    <property name="SettingsSearchHistory" value="sdk&#10;git&#10;update" />
+    <property name="Source Code Editor With PreviewLayout" value="Editor only" />
     <property name="TextEditorWithPreview.SplitterProportionKey" value="0.6396166" />
-    <property name="appcds.runOnSecondStart" value="AI-203.7717.56.2031.7583922-a8a8fe40136b143a7a0248f5c5011b6d142d977f29f31855efbb432b560b8134" />
+    <property name="appcds.runOnSecondStart" value="AI-203.7717.56.2031.7583922-1e254b57ff6127e8180f0ac958460c66b157fa8d351638815ab4a553cd105b9b" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="export.settings.path" value="$USER_HOME$/development/as-settings.zip" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/development/projects/android/life_manager&#10;/home/jan/development/projects/android&#10;/opt/android-sdk&#10;/home/jan/android-sdk&#10;/home/jan/programming/projects/flutter/life_manager&#10;/home/jan/programming/projects/flutter/fuldation&#10;/home/jan/programming/projects/flutter/orig_extended_textfield/extended_text_field&#10;/home/jan/programming/projects/flutter/extended_text_field&#10;/home/jan/programming/languages/flutter/flutter_linux_v1.9.1+hotfix.5-stable/flutter&#10;/home/jan/programming/languages/flutter&#10;/home/jan/programming/android-sdk-tools&#10;/home/jan/programming/projects/flutter/test_project&#10;/home/jan/programming/projects/dart/aqueduct_getting_started&#10;/home/jan/programming/themes/android-studio/Ladies Night 2.jar&#10;/home/jan/programming/languages/dart/dart-sdk" />
     <property name="file.gist.reindex.count" value="6" />
     <property name="fileTypeChangedCounter" value="5" />
     <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="ide.updates.previous.build.number" value="AI-203.7717.56.2031.7583922" />
-    <property name="ideavim.statistics.timestamp" value="1629627631929" />
+    <property name="ideavim.statistics.timestamp" value="1631729238753" />
     <property name="installed.kotlin.plugin.version" value="203-1.5.21-release-328-AS7717.8" />
     <property name="io.flutter.analytics.clientId" value="ddb54996-45b9-4065-b983-ba330516c1e1" />
     <property name="io.flutter.analytics.toastShown" value="true" />

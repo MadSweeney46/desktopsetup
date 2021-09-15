@@ -51,4 +51,4 @@ PS1='[\u@\h \W]\$ '
 source ~/.cache/wal/colors-tty.sh
 
 export CHROME_EXECUTABLE=/usr/bin/chromium
-export PATH="$HOME/.emacs.d/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.emacs.d/bin:$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/development/intellij_idea/idea-IC-212.5284.40/bin/idea.sh:$PATH"

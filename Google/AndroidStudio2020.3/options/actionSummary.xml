@@ -19,7 +19,13 @@
       <i c="5" l="1629640492874" />
     </e>
     <e n="ChangeKeymap">
-      <i c="11" l="1629641232176" />
+      <i c="12" l="1629744555853" />
+    </e>
+    <e n="CheckinProject">
+      <i c="4" l="1629749487621" />
+    </e>
+    <e n="CloseProject">
+      <i c="1" l="1631729290924" />
     </e>
     <e n="Debug">
       <i c="1" l="1629640875962" />
@@ -28,7 +34,7 @@
       <i c="2" l="1629571033559" />
     </e>
     <e n="EditorBackSpace">
-      <i c="314" l="1629646883318" />
+      <i c="354" l="1631734189792" />
     </e>
     <e n="EditorChooseLookupItem">
       <i c="35" l="1629646874668" />
@@ -40,7 +46,7 @@
       <i c="8" l="1629483353954" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="27" l="1629641401606" />
+      <i c="34" l="1629749762335" />
     </e>
     <e n="EditorDown">
       <i c="9" l="1629646839604" />
@@ -53,6 +59,9 @@
     </e>
     <e n="EditorLeft">
       <i c="38" l="1629484202911" />
+    </e>
+    <e n="EditorPaste">
+      <i c="2" l="1629749882177" />
     </e>
     <e n="EditorSplitLine">
       <i c="2" l="1629572478319" />
@@ -69,6 +78,9 @@
     <e n="EmacsStyleIndent">
       <i c="2" l="1629641143898" />
     </e>
+    <e n="ExportSettings">
+      <i c="1" l="1631734159640" />
+    </e>
     <e n="FileChooser.Delete">
       <i c="1" l="1629483069890" />
     </e>
@@ -77,6 +89,9 @@
     </e>
     <e n="FindUsages">
       <i c="2" l="1629638865495" />
+    </e>
+    <e n="Git.Init">
+      <i c="1" l="1629749067591" />
     </e>
     <e n="GotoAction">
       <i c="1" l="1629628445584" />
@@ -127,7 +142,7 @@
       <i c="33" l="1629647979552" />
     </e>
     <e n="SearchEverywhere">
-      <i c="39" l="1629642582857" />
+      <i c="43" l="1631731091291" />
     </e>
     <e n="ShowIntentionActions">
       <i c="21" l="1629646866115" />
@@ -135,17 +150,23 @@
     <e n="ShowSettings">
       <i c="1" l="1629627509389" />
     </e>
+    <e n="Tree-selectPrevious">
+      <i c="1" l="1629749208182" />
+    </e>
+    <e n="Vcs.Push">
+      <i c="3" l="1629749501133" />
+    </e>
     <e n="WelcomeScreen.CreateNewProject">
       <i c="4" l="1629482051010" />
     </e>
     <e n="WelcomeScreen.Plugins">
-      <i c="5" l="1629568893694" />
+      <i c="7" l="1629749001741" />
     </e>
     <e n="WelcomeScreen.Settings">
-      <i c="8" l="1629641302500" />
+      <i c="9" l="1631731096237" />
     </e>
     <e n="com.android.tools.idea.common.editor.SplitEditor$SplitEditorAction">
-      <i c="9" l="1629646378544" />
+      <i c="10" l="1629748994067" />
     </e>
     <e n="com.android.tools.idea.compose.preview.actions.ForceCompileAndRefreshAction">
       <i c="10" l="1629647049595" />
@@ -159,14 +180,23 @@
     <e n="com.intellij.codeInsight.lookup.impl.LookupUi$MenuAction">
       <i c="1" l="1629628164531" />
     </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="1" l="1631731082261" />
+    </e>
     <e n="com.intellij.ide.actions.QuickChangeKeymapAction$1">
       <i c="8" l="1629641232991" />
     </e>
+    <e n="com.intellij.ide.plugins.PluginManagerConfigurable$MarketplaceSortByAction">
+      <i c="2" l="1629748873900" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.ListPluginComponent$UninstallAction">
+      <i c="1" l="1629748943015" />
+    </e>
     <e n="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
-      <i c="412" l="1629647045938" />
+      <i c="413" l="1629749091280" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="5" l="1629638941135" />
+      <i c="8" l="1629749204690" />
     </e>
     <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$12">
       <i c="5" l="1629628856125" />
@@ -178,13 +208,13 @@
       <i c="1" l="1629628859434" />
     </e>
     <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
-      <i c="33" l="1629642585630" />
+      <i c="36" l="1629749001693" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$5">
-      <i c="12" l="1629642507637" />
+      <i c="15" l="1631734721087" />
     </e>
     <e n="com.intellij.openapi.updateSettings.impl.UpdateChecker$showNotification$1">
-      <i c="2" l="1629569115982" />
+      <i c="3" l="1629744562762" />
     </e>
     <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
       <i c="1" l="1629499980250" />

@@ -18,6 +18,9 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
+      <file name="/Dummy.txt" timestamp="1629749470933">
+        <mark key="[" line="0" column="0" />
+      </file>
       <file name="$USER_HOME$/development/projects/android/life_manager/app/src/main/AndroidManifest.xml" timestamp="1629641202427">
         <mark key="'" line="13" column="27" />
         <mark key="[" line="12" column="26" />

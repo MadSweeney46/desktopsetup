@@ -1,0 +1,70 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="$Undo">
+      <i c="5" l="1631734429505" />
+    </e>
+    <e n="CollapseSelection">
+      <i c="2" l="1631734006681" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="15" l="1631734495295" />
+    </e>
+    <e n="EditorDelete">
+      <i c="3" l="1631733941066" />
+    </e>
+    <e n="EditorDeleteToWordStart">
+      <i c="25" l="1631734469251" />
+    </e>
+    <e n="ExternalSystem.OpenConfig">
+      <i c="1" l="1631731807354" />
+    </e>
+    <e n="ExternalSystem.RefreshAllProjects">
+      <i c="1" l="1631731815460" />
+    </e>
+    <e n="ExternalSystem.RunTask">
+      <i c="2" l="1631733914874" />
+    </e>
+    <e n="FileChooser.NewFolder">
+      <i c="3" l="1631733345211" />
+    </e>
+    <e n="ImportSettings">
+      <i c="1" l="1631734210433" />
+    </e>
+    <e n="Run">
+      <i c="2" l="1631734379378" />
+    </e>
+    <e n="SaveAll">
+      <i c="1" l="1631734478940" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="2" l="1631734523430" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="3" l="1631733327315" />
+    </e>
+    <e n="WelcomeScreen.Settings">
+      <i c="1" l="1631734525955" />
+    </e>
+    <e n="com.intellij.ide.ReopenProjectAction">
+      <i c="1" l="1631733248699" />
+    </e>
+    <e n="com.intellij.openapi.externalSystem.action.task.ExternalSystemTaskMenu$DelegatingActionGroup">
+      <i c="1" l="1631733856812" />
+    </e>
+    <e n="com.intellij.openapi.externalSystem.util.ExternalSystemUtil$2$3$1">
+      <i c="1" l="1631731618478" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="3" l="1631731955190" />
+    </e>
+    <e n="com.intellij.openapi.ui.DialogWrapper$4">
+      <i c="2" l="1631733151463" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
+      <i c="3" l="1631733971589" />
+    </e>
+    <e n="editRunConfigurations">
+      <i c="1" l="1631731623199" />
+    </e>
+  </component>
+</application>

@@ -82,13 +82,13 @@
         </entry>
         <entry key="$USER_HOME$/development/projects/android/life_manager">
           <value>
-            <RecentProjectMetaInfo frameTitle="life_manager – MainActivity.kt [life_manager.app]" opened="true" projectWorkspaceId="1x0E2dk26pkhfZV2CtGsINUEjpu">
+            <RecentProjectMetaInfo frameTitle="life_manager – build.gradle (:app)" opened="true" projectWorkspaceId="1x0E2dk26pkhfZV2CtGsINUEjpu">
               <option name="binFolder" value="$APPLICATION_HOME_DIR$/bin" />
               <option name="build" value="AI-203.7717.56.2031.7583922" />
-              <option name="buildTimestamp" value="1627329580901" />
+              <option name="buildTimestamp" value="1627329593792" />
               <frame x="12" y="51" width="1892" height="1013" />
               <option name="productionCode" value="AI" />
-              <option name="projectOpenTimestamp" value="1629483408591" />
+              <option name="projectOpenTimestamp" value="1631731085069" />
             </RecentProjectMetaInfo>
           </value>
         </entry>
