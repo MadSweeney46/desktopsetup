@@ -2,10 +2,12 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="-1">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
+        <entry file="file://$PROJECT_DIR$/build.gradle.kts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+            <state>
+              <folding>
+                <element signature="e#0#157#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -25,8 +27,51 @@
     </option>
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1" />
-    <panes />
+    <navigator currentView="ProjectPane" proportions="" version="1" />
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="gradle" type="462c0819:PsiDirectoryNode" />
+              <item name="wrapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="zeiterfassung" type="b2602c69:ProjectViewProjectNode" />
+              <item name="zeiterfassung" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="kotlin" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="TerminalArrangementManager">
     <option name="myTabStates">
@@ -34,8 +79,9 @@
     </option>
   </component>
   <component name="ToolWindowManager">
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2502643" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2502643" />
       <window_info id="Structure" order="1" side_tool="true" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="Commit" order="3" />
@@ -47,25 +93,25 @@
       <window_info anchor="bottom" id="Find" order="2" />
       <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3302073" />
       <window_info anchor="bottom" id="TODO" order="4" />
-      <window_info anchor="bottom" id="Problems View" order="5" sideWeight="0.50027084" weight="0.3302073" />
+      <window_info anchor="bottom" id="Problems View" order="5" sideWeight="0.50027084" visible="true" weight="0.3302073" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3302073" />
       <window_info anchor="bottom" id="Services" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Build" order="10" weight="0.3302073" />
       <window_info anchor="bottom" id="Dependencies" order="11" />
-      <window_info anchor="right" id="Gradle" order="0" visible="true" weight="0.330074" />
+      <window_info anchor="right" id="Gradle" order="0" visible="true" weight="0.15724102" />
       <window_info anchor="right" id="Space Automation" order="1" />
       <window_info anchor="right" id="Layout Validation" order="2" />
     </layout>
     <recentWindows>
+      <value>Project</value>
+      <value>Problems View</value>
       <value>Gradle</value>
       <value>Run</value>
       <value>Event Log</value>
-      <value>Problems View</value>
       <value>Terminal</value>
       <value>Build</value>
-      <value>Project</value>
     </recentWindows>
   </component>
   <component name="Trusted.Project.Settings" hasCheckedIfOldProject="true" trusted="YES" />
@@ -74,10 +120,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="711" y="443" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1631734304451" />
-    <state x="730" y="315" key="FileChooserDialogImpl" timestamp="1631734295362">
+    <state x="730" y="315" width="424" height="454" key="FileChooserDialogImpl" timestamp="1632050046355">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="730" y="315" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1631734295362" />
+    <state x="730" y="315" width="424" height="454" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1632050046355" />
     <state width="1846" height="306" key="GridCell.Tab.0.bottom" timestamp="1631734308894">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -94,20 +140,36 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1846" height="306" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1631734308892" />
-    <state x="454" y="192" key="SettingsEditor" timestamp="1631734587203">
+    <state x="454" y="192" key="SettingsEditor" timestamp="1632051307180">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="454" y="192" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1631734587203" />
-    <state x="621" y="273" width="672" height="687" key="search.everywhere.popup" timestamp="1631734525904">
+    <state x="454" y="192" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1632051307180" />
+    <state x="443" y="260" width="1019" height="564" key="new project wizard" timestamp="1632054171624">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="621" y="273" width="672" height="687" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1631734525904" />
+    <state x="443" y="260" width="1019" height="564" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1632054171624" />
+    <state x="621" y="273" width="672" height="687" key="search.everywhere.popup" timestamp="1631735211135">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="621" y="273" width="672" height="687" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1631735211135" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/kotlin/Main.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="40" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
+        <state relative-caret-position="119">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/settings.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle.kts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#157#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

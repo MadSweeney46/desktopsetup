@@ -18,8 +18,11 @@
   <component name="VimMarksSettings">
     <globalmarks />
     <filemarks>
-      <file name="/Dummy.txt" timestamp="1629749470933">
+      <file name="/Dummy.txt" timestamp="1632056615716">
         <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/development/projects/android/TestApp/build.gradle" timestamp="1632849111248">
+        <mark key="^" line="18" column="28" />
       </file>
       <file name="$USER_HOME$/development/projects/android/life_manager/app/src/main/AndroidManifest.xml" timestamp="1629641202427">
         <mark key="'" line="13" column="27" />
@@ -34,6 +37,13 @@
         <mark key="]" line="50" column="22" />
         <mark key="." line="50" column="21" />
         <mark key="^" line="50" column="22" />
+      </file>
+      <file name="$USER_HOME$/development/projects/android/TestApp/app/build.gradle" timestamp="1632849204994">
+        <mark key="'" line="7" column="73" />
+        <mark key="[" line="63" column="0" />
+        <mark key="]" line="63" column="2" />
+        <mark key="." line="63" column="1" />
+        <mark key="^" line="63" column="2" />
       </file>
       <file name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation/1.0.0/4193a37684eb9621715649ba0f8f84b842c77560/foundation-1.0.0-sources.jar!/androidx/compose/foundation/lazy/LazyDsl.kt" timestamp="1629639608384">
         <mark key="'" line="309" column="4" />
@@ -59,18 +69,19 @@
       <jump line="29" column="9" filename="$USER_HOME$/development/projects/android/life_manager/app/src/main/java/com/example/life_manager/MainActivity.kt" />
       <jump line="309" column="4" filename="$USER_HOME$/.gradle/caches/modules-2/files-2.1/androidx.compose.foundation/foundation/1.0.0/4193a37684eb9621715649ba0f8f84b842c77560/foundation-1.0.0-sources.jar!/androidx/compose/foundation/lazy/LazyDsl.kt" />
       <jump line="13" column="27" filename="$USER_HOME$/development/projects/android/life_manager/app/src/main/AndroidManifest.xml" />
+      <jump line="7" column="73" filename="$USER_HOME$/development/projects/android/TestApp/app/build.gradle" />
     </jumps>
   </component>
   <component name="VimRegisterSettings">
     <registers>
-      <register name="&quot;" type="4">
-        <text encoding="base64">LCBjb250ZW50ID0ge1RleHQoIm15IGJ1dHRvbiIpfQ==</text>
+      <register name="&quot;" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
       <register name="-" type="4">
         <text encoding="base64">LCBjb250ZW50ID0ge1RleHQoIm15IGJ1dHRvbiIpfQ==</text>
       </register>
       <register name="." type="4">
-        <text encoding="base64">dGV4dD0=</text>
+        <text encoding="base64">Ly8=</text>
       </register>
       <register name="/" type="4">
         <text encoding="base64">aXRlbXM=</text>
@@ -78,32 +89,32 @@
       <register name="0" type="4">
         <text encoding="base64">VGV4dCgibXkgYnV0dG9uIg==</text>
       </register>
-      <register name="1" type="4">
-        <text encoding="base64">ewogICAgICAgICAgICAKICAgICAgICB9</text>
+      <register name="1" type="2">
+        <text encoding="base64">Cg==</text>
       </register>
-      <register name="2" type="4">
-        <text encoding="base64">ewogICAgICAgIAogICAgfQ==</text>
+      <register name="2" type="2">
+        <text encoding="base64">YnVpbGRzY3JpcHQgewogICAgZXh0Lm9iamVjdGJveFZlcnNpb24gPSAnMi45LjEnCiAgICByZXBvc2l0b3JpZXMgewogICAgICAgIG1hdmVuQ2VudHJhbCgpCiAgICAgICAgLy8gTm90ZTogMi45LjAgYW5kIG9sZGVyIGFyZSBhdmFpbGFibGUgb24gamNlbnRlcigpCiAgICB9CiAgICBkZXBlbmRlbmNpZXMgewogICAgICAgIGNsYXNzcGF0aCAiaW8ub2JqZWN0Ym94Om9iamVjdGJveC1ncmFkbGUtcGx1Z2luOiRvYmplY3Rib3hWZXJzaW9uIgogICAgfQp9Cg==</text>
       </register>
-      <register name="3" type="4">
-        <text encoding="base64">ewoKICAgIH0=</text>
+      <register name="3" type="2">
+        <text encoding="base64">ICAgIGpjZW50ZXIoKQo=</text>
       </register>
       <register name="4" type="2">
-        <text encoding="base64">ICAgIG5hdmlnYXRpb25JY29uOiBAQ29tcG9zYWJsZSgpICgoKSAtPiBVbml0KT8gPSBudWxsIHsK</text>
+        <text encoding="base64">ICAgICAgICBjbGFzc3BhdGggImlvLm9iamVjdGJveDpvYmplY3Rib3gtZ3JhZGxlLXBsdWdpbjokb2JqZWN0Ym94VmVyc2lvbiIK</text>
       </register>
       <register name="5" type="2">
-        <text encoding="base64">ICAgICAgICB2ZXJ0aWNhbEFycmFuZ2VtZW50ID0gQXJyYW5nZW1lbnQuQ2VudGVyCg==</text>
+        <text encoding="base64">ICAgIGpjZW50ZXIoKQo=</text>
       </register>
-      <register name="6" type="2">
-        <text encoding="base64">ICAgICAgICBtb2RpZmllciA9IG1vZGlmaWVyCg==</text>
+      <register name="6" type="4">
+        <text encoding="base64">ewogICAgICAgICAgICAKICAgICAgICB9</text>
       </register>
-      <register name="7" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgICAgICAgICB2YXIgbW9kaWZpZXIgOk1vZGlmaWVyID0gTW9kaWZpZXIuZmlsbE1heFNpemUoKQo=</text>
+      <register name="7" type="4">
+        <text encoding="base64">ewogICAgICAgIAogICAgfQ==</text>
       </register>
-      <register name="8" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpuYW1lPSIuTWFpbkFjdGl2aXR5Igo=</text>
+      <register name="8" type="4">
+        <text encoding="base64">ewoKICAgIH0=</text>
       </register>
       <register name="9" type="2">
-        <text encoding="base64">ICAgICAgICAgICAgYW5kcm9pZDpuYW1lCg==</text>
+        <text encoding="base64">ICAgIG5hdmlnYXRpb25JY29uOiBAQ29tcG9zYWJsZSgpICgoKSAtPiBVbml0KT8gPSBudWxsIHsK</text>
       </register>
       <register name=":" type="4">
         <text encoding="base64">dw==</text>

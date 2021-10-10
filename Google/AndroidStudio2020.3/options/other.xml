@@ -20,6 +20,11 @@
             <ProjectPluginTrackerState />
           </value>
         </entry>
+        <entry key="1ymFeNTJBFB8gab5H80C0sxLOM2">
+          <value>
+            <ProjectPluginTrackerState />
+          </value>
+        </entry>
       </map>
     </option>
   </component>
@@ -53,17 +58,17 @@
     <property name="SettingsSearchHistory" value="sdk&#10;git&#10;update" />
     <property name="Source Code Editor With PreviewLayout" value="Editor only" />
     <property name="TextEditorWithPreview.SplitterProportionKey" value="0.6396166" />
-    <property name="appcds.runOnSecondStart" value="AI-203.7717.56.2031.7583922-1e254b57ff6127e8180f0ac958460c66b157fa8d351638815ab4a553cd105b9b" />
+    <property name="appcds.runOnSecondStart" value="AI-203.7717.56.2031.7583922-51f85162c0f3d85b274c01defab222f9f18b01489617f831f50e655473325015" />
     <property name="ask.about.ctrl.y.shortcut" value="true" />
     <property name="build.toolwindow.Build Output.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="export.settings.path" value="$USER_HOME$/development/as-settings.zip" />
     <property name="file.chooser.recent.files" value="$USER_HOME$/development/projects/android/life_manager&#10;/home/jan/development/projects/android&#10;/opt/android-sdk&#10;/home/jan/android-sdk&#10;/home/jan/programming/projects/flutter/life_manager&#10;/home/jan/programming/projects/flutter/fuldation&#10;/home/jan/programming/projects/flutter/orig_extended_textfield/extended_text_field&#10;/home/jan/programming/projects/flutter/extended_text_field&#10;/home/jan/programming/languages/flutter/flutter_linux_v1.9.1+hotfix.5-stable/flutter&#10;/home/jan/programming/languages/flutter&#10;/home/jan/programming/android-sdk-tools&#10;/home/jan/programming/projects/flutter/test_project&#10;/home/jan/programming/projects/dart/aqueduct_getting_started&#10;/home/jan/programming/themes/android-studio/Ladies Night 2.jar&#10;/home/jan/programming/languages/dart/dart-sdk" />
-    <property name="file.gist.reindex.count" value="6" />
+    <property name="file.gist.reindex.count" value="7" />
     <property name="fileTypeChangedCounter" value="5" />
     <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="ide.updates.previous.build.number" value="AI-203.7717.56.2031.7583922" />
-    <property name="ideavim.statistics.timestamp" value="1631729238753" />
+    <property name="ideavim.statistics.timestamp" value="1632848910427" />
     <property name="installed.kotlin.plugin.version" value="203-1.5.21-release-328-AS7717.8" />
     <property name="io.flutter.analytics.clientId" value="ddb54996-45b9-4065-b983-ba330516c1e1" />
     <property name="io.flutter.analytics.toastShown" value="true" />

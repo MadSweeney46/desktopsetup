@@ -2,6 +2,11 @@
   <component name="ProjectPluginTrackerManager">
     <trackers>
       <map>
+        <entry key="1x0E2dk26pkhfZV2CtGsINUEjpu">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
         <entry key="1yBimmI7cfZpKVCIAivBJMRm04s">
           <value>
             <ProjectPluginTracker />
@@ -12,46 +17,71 @@
             <ProjectPluginTracker />
           </value>
         </entry>
+        <entry key="1yMGiiPX9R20EA07jczuX5dSdbI">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1yMKSjoWUCe1lklfNaTXiyQf8Lr">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="1ymFJ2i8vu4FSdXT6wxBNnYc4xW">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
       </map>
     </trackers>
   </component>
   <component name="PropertiesComponent">
-    <property name="MarketplacePluginsSearchHistory" value="vim" />
+    <property name="InstalledPluginsSearchHistory" value="maven&#10;ma&#10;gradle extension&#10;gradle exten&#10;gradle ex" />
+    <property name="KEYMAP" value="goto" />
+    <property name="MarketplacePluginsSearchHistory" value="git&#10;maven&#10;gradle extension&#10;gradle e&#10;gradle" />
     <property name="NewKotlinWizard.android.androidSdkPath" value="/opt/android-sdk" />
-    <property name="NewKotlinWizard.buildSystem.type" value="GradleKotlinDsl" />
+    <property name="NewKotlinWizard.buildSystem.type" value="GradleGroovyDsl" />
     <property name="NewKotlinWizard.structure.groupId" value="me.jan" />
-    <property name="appcds.runOnSecondStart" value="IC-212.5284.40-42bad7445660617c456c0cf8a14198befa8b8dccff4703a9a371b5a8685e4b9f" />
+    <property name="ProjectStructure.SecondLevelElements" value="0.4581861" />
+    <property name="ProjectStructure.TopLevelElements" value="0.17" />
+    <property name="SettingsSearchHistory" value="keymap&#10;maven&#10;gradle extension&#10;gradle&#10;settings repository" />
+    <property name="appcds.runOnSecondStart" value="IC-212.5284.40-ac2eff2fcb619b51da99b36a1fb057976add75983de81ca8d453a635b890bf50" />
     <property name="build.toolwindow.Sync.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
     <property name="build.toolwindow.run.selection.state" value="com.intellij.build.BuildTreeConsoleView" />
+    <property name="com.intellij.openapi.roots.ui.configuration.TabbedModuleEditor.selectedEditor" value="Sources" />
     <property name="completion.ml.enabled.notification.shown" value="true" />
     <property name="defaultJdkConfigured" value="true" />
     <property name="eclipse.projects.detected" value="" />
-    <property name="file.chooser.recent.files" value="$USER_HOME$/development/as-settings.zip&#10;/home/jan/development/projects/compose_desktop/zeiterfassung&#10;/home/jan/development/projects/compose_desktop&#10;/home/jan/development/projects/jetpack_compose_multiplatform/zeiterfassung&#10;/opt/android-sdk" />
-    <property name="file.gist.reindex.count" value="35" />
+    <property name="file.chooser.recent.files" value="$USER_HOME$/development/projects/compose_desktop/zeiterfassung&#10;/home/jan/development/projects/compose_desktop/zeiterfassung/lib&#10;/home/jan/development/projects/android/life_manager&#10;/home/jan/development/as-settings.zip&#10;/home/jan/development/projects/compose_desktop&#10;/home/jan/development/projects/jetpack_compose_multiplatform/zeiterfassung&#10;/opt/android-sdk" />
+    <property name="file.gist.reindex.count" value="69" />
     <property name="fileTypeChangedCounter" value="5" />
     <property name="fileTypeDetectors" value="com.android.tools.idea.fileTypes.profiler.MemoryCaptureFileType$Detector:com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector:com.intellij.ide.scratch.ScratchFileServiceImpl$Detector:org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector" />
     <property name="got.it.tooltip.cwm.invitation.notification" value="1" />
+    <property name="got.it.tooltip.reader.mode.got.it" value="1" />
     <property name="ide.memory.adjusted" value="true" />
     <property name="ide.updates.previous.build.number" value="IC-212.5284.40" />
     <property name="ide.updates.whats.new.shown.for" value="212" />
+    <property name="ideavim.statistics.timestamp" value="1633878282066" />
     <property name="input.method.disabler.muted" value="true" />
-    <property name="installed.kotlin.plugin.version" value="212-1.5.30-release-409-IJ4638.7" />
+    <property name="installed.kotlin.plugin.version" value="212-1.5.31-release-546-IJ4638.7" />
     <property name="jdk.selected.JAVA_MODULE" value="16" />
     <property name="kotlin-gradle-user-dirs" value="$USER_HOME$/.gradle" />
-    <property name="kotlin.lastUpdateCheck" value="1631733936957" />
-    <property name="kotlin.plugin.releaseDate" value="212-1.5.30-release-409-IJ4638.7:2021-08-24" />
-    <property name="last_opened_file_path" value="$USER_HOME$/development/as-settings.zip" />
+    <property name="kotlin.lastUpdateCheck" value="1633453471776" />
+    <property name="kotlin.plugin.releaseDate" value="212-1.5.31-release-546-IJ4638.7:2021-09-20" />
+    <property name="last_opened_file_path" value="$USER_HOME$/development/projects/compose_desktop/zeiterfassung" />
     <property name="log.trace.categories" value="#com.jetbrains.rdserver.requests&#10;#com.jetbrains.rd.ide.document&#10;#com.jetbrains.rdserver.document&#10;#com.jetbrains.rdserver.editors&#10;#com.jetbrains.rdserver.actions&#10;#com.jetbrains.rdserver.permissions" />
     <property name="packagesearch.endpoint.url.fulltext" value="https://package-search.services.jetbrains.com/api/search/idea/fulltext" />
     <property name="packagesearch.endpoint.url.suggest" value="https://package-search.services.jetbrains.com/api/search/idea/suggest" />
-    <property name="packagesearch.status.updated.ts" value="1631731542801" />
+    <property name="packagesearch.status.updated.ts" value="1633453289201" />
     <property name="project.wizard.group" value="kotlin.newProjectWizard.builder" />
     <property name="registry.to.advanced.settings.migration.build" value="IC-212.5284.40" />
+    <property name="settings.code.style.selected.tab.Groovy" value="Spaces" />
+    <property name="settings.code.style.selected.tab.JAVA" value="Spaces" />
     <property name="tasks.pass.word.conversion.enforced" value="true" />
   </component>
   <component name="TerminalCommandHistoryManager">
     <command-history-files>
-      <command-history-file filename="zeiterfassung-history" project-path="$USER_HOME$/development/projects/compose_desktop/zeiterfassung" last-access-time="1631733732037" />
+      <command-history-file filename="zeiterfassung-history1" project-path="$USER_HOME$/development/projects/compose_desktop/zeiterfassung" last-access-time="1632849505053" />
     </command-history-files>
   </component>
   <component name="ToolbarSettingsService">

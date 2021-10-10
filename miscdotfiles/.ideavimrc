@@ -4,3 +4,4 @@ let mapleader ="\<Space>"
 noremap ö :
 
 set easymotion
+set visualbell

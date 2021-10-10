@@ -12,7 +12,6 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-          <provider editor-type-id="android-manifest" />
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="85">
               <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
@@ -23,21 +22,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/life_manager/ExampleUnitTest.kt">
           <provider selected="true" editor-type-id="android-source-code">
-            <state selected-layout="SHOW_EDITOR">
+            <state>
               <editor-state relative-caret-position="204">
                 <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
               </editor-state>
-              <multi-preview-state selected="Compose">
+              <multi-preview-state selected="">
                 <representations>
-                  <list>
-                    <representation name="Compose">
-                      <settings>
-                        <setting name="buildOnSave" value="false" />
-                        <setting name="previewLayout" value="Vertical Layout" />
-                        <setting name="selectedGroup" value="" />
-                      </settings>
-                    </representation>
-                  </list>
+                  <list />
                 </representations>
               </multi-preview-state>
             </state>
@@ -47,21 +38,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/life_manager/MainActivity.kt">
           <provider selected="true" editor-type-id="android-source-code">
-            <state selected-layout="SHOW_EDITOR">
+            <state>
               <editor-state relative-caret-position="85">
                 <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
               </editor-state>
-              <multi-preview-state selected="Compose">
+              <multi-preview-state selected="">
                 <representations>
-                  <list>
-                    <representation name="Compose">
-                      <settings>
-                        <setting name="buildOnSave" value="false" />
-                        <setting name="previewLayout" value="Vertical Layout" />
-                        <setting name="selectedGroup" value="" />
-                      </settings>
-                    </representation>
-                  </list>
+                  <list />
                 </representations>
               </multi-preview-state>
             </state>
@@ -71,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
+            <state relative-caret-position="391">
+              <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -118,7 +101,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="AndroidView">
         <subPane>
           <expand>
@@ -139,12 +121,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="ToolWindowManager">
+    <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21830986" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2291441" />
       <window_info id="Structure" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Commit" order="4" />
@@ -182,6 +166,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="660" y="382" width="585" height="320" key="#Notifications/0.0.1920.1080@0.0.1920.1080" timestamp="1629499171579" />
+    <state x="478" y="292" width="950" height="500" key="#PSD" timestamp="1632057363405">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="478" y="292" width="950" height="500" key="#PSD/0.0.1920.1080@0.0.1920.1080" timestamp="1632057363405" />
     <state x="704" y="395" width="497" height="295" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog" timestamp="1631734192998">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -301,21 +289,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/test/java/com/example/life_manager/ExampleUnitTest.kt">
       <provider selected="true" editor-type-id="android-source-code">
-        <state selected-layout="SHOW_EDITOR">
+        <state>
           <editor-state relative-caret-position="204">
             <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
           </editor-state>
-          <multi-preview-state selected="Compose">
+          <multi-preview-state selected="">
             <representations>
-              <list>
-                <representation name="Compose">
-                  <settings>
-                    <setting name="buildOnSave" value="false" />
-                    <setting name="previewLayout" value="Vertical Layout" />
-                    <setting name="selectedGroup" value="" />
-                  </settings>
-                </representation>
-              </list>
+              <list />
             </representations>
           </multi-preview-state>
         </state>
@@ -323,21 +303,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/life_manager/MainActivity.kt">
       <provider selected="true" editor-type-id="android-source-code">
-        <state selected-layout="SHOW_EDITOR">
+        <state>
           <editor-state relative-caret-position="85">
             <caret line="17" column="63" selection-start-line="17" selection-start-column="63" selection-end-line="17" selection-end-column="63" />
           </editor-state>
-          <multi-preview-state selected="Compose">
+          <multi-preview-state selected="">
             <representations>
-              <list>
-                <representation name="Compose">
-                  <settings>
-                    <setting name="buildOnSave" value="false" />
-                    <setting name="previewLayout" value="Vertical Layout" />
-                    <setting name="selectedGroup" value="" />
-                  </settings>
-                </representation>
-              </list>
+              <list />
             </representations>
           </multi-preview-state>
         </state>
@@ -345,8 +317,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="24" column="91" selection-start-line="24" selection-start-column="91" selection-end-line="24" selection-end-column="91" />
+        <state relative-caret-position="391">
+          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
         </state>
       </provider>
     </entry>

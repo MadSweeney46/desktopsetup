@@ -18,6 +18,14 @@
           <Count>2</Count>
         </Item>
       </Statistic>
+      <Statistic Action="Project Structure...">
+        <Item>
+          <IdeaActionID>ShowProjectStructureSettings</IdeaActionID>
+          <ShortCut>'Strg+Alt+Umschalt+S'</ShortCut>
+          <Description>Project Structure...</Description>
+          <Count>1</Count>
+        </Item>
+      </Statistic>
       <Statistic Action="Push...">
         <Item>
           <IdeaActionID>Vcs.Push</IdeaActionID>

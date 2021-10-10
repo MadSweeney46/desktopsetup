@@ -1,19 +1,61 @@
 <application>
   <component name="ActionsLocalSummary">
+    <e n="$Copy">
+      <i c="2" l="1632849529539" />
+    </e>
+    <e n="$Delete">
+      <i c="1" l="1633453681953" />
+    </e>
     <e n="$Undo">
       <i c="5" l="1631734429505" />
     </e>
+    <e n="AutoIndentLines">
+      <i c="17" l="1633456409786" />
+    </e>
+    <e n="ChangeKeymap">
+      <i c="5" l="1633457768208" />
+    </e>
+    <e n="CheckinProject">
+      <i c="1" l="1633878293259" />
+    </e>
     <e n="CollapseSelection">
-      <i c="2" l="1631734006681" />
+      <i c="4" l="1632853604148" />
+    </e>
+    <e n="CompileDirty">
+      <i c="2" l="1632054363681" />
+    </e>
+    <e n="ConfigureIcs">
+      <i c="5" l="1633877202263" />
     </e>
     <e n="EditorBackSpace">
-      <i c="15" l="1631734495295" />
+      <i c="235" l="1633878474710" />
+    </e>
+    <e n="EditorChooseLookupItem">
+      <i c="23" l="1633458142590" />
+    </e>
+    <e n="EditorCopy">
+      <i c="4" l="1633284514489" />
     </e>
     <e n="EditorDelete">
-      <i c="3" l="1631733941066" />
+      <i c="17" l="1633283677243" />
+    </e>
+    <e n="EditorDeleteToWordEnd">
+      <i c="1" l="1631735156158" />
     </e>
     <e n="EditorDeleteToWordStart">
-      <i c="25" l="1631734469251" />
+      <i c="74" l="1633878340074" />
+    </e>
+    <e n="EditorDown">
+      <i c="5" l="1633454002559" />
+    </e>
+    <e n="EditorEnter">
+      <i c="60" l="1633878345842" />
+    </e>
+    <e n="EditorPaste">
+      <i c="5" l="1633455669464" />
+    </e>
+    <e n="EditorUp">
+      <i c="8" l="1633453999071" />
     </e>
     <e n="ExternalSystem.OpenConfig">
       <i c="1" l="1631731807354" />
@@ -22,49 +64,184 @@
       <i c="1" l="1631731815460" />
     </e>
     <e n="ExternalSystem.RunTask">
-      <i c="2" l="1631733914874" />
+      <i c="8" l="1632083855184" />
+    </e>
+    <e n="ExternalSystem.ShowSettingsGroup">
+      <i c="1" l="1633456164298" />
     </e>
     <e n="FileChooser.NewFolder">
       <i c="3" l="1631733345211" />
     </e>
+    <e n="FindUsages">
+      <i c="1" l="1633456736250" />
+    </e>
+    <e n="Git.Commit.And.Push.Executor">
+      <i c="2" l="1633878409435" />
+    </e>
+    <e n="Git.Init">
+      <i c="1" l="1633878276482" />
+    </e>
+    <e n="GotoClass">
+      <i c="1" l="1632774366846" />
+    </e>
+    <e n="GotoDeclaration">
+      <i c="4" l="1633457841133" />
+    </e>
+    <e n="GotoTypeDeclaration">
+      <i c="2" l="1633457831544" />
+    </e>
     <e n="ImportSettings">
       <i c="1" l="1631734210433" />
     </e>
+    <e n="JumpToLastWindow">
+      <i c="1" l="1633454023769" />
+    </e>
+    <e n="Kotlin.NewFile">
+      <i c="5" l="1633455803018" />
+    </e>
+    <e n="NewDir">
+      <i c="3" l="1632848544208" />
+    </e>
+    <e n="NewProject">
+      <i c="4" l="1632852837104" />
+    </e>
+    <e n="OpenFile">
+      <i c="4" l="1632849393004" />
+    </e>
+    <e n="PasteMultiple">
+      <i c="27" l="1633453470908" />
+    </e>
     <e n="Run">
-      <i c="2" l="1631734379378" />
+      <i c="62" l="1633458150852" />
     </e>
     <e n="SaveAll">
-      <i c="1" l="1631734478940" />
+      <i c="91" l="1633457941218" />
     </e>
     <e n="SearchEverywhere">
-      <i c="2" l="1631734523430" />
+      <i c="22" l="1633878233403" />
+    </e>
+    <e n="SettingsEntryPoint">
+      <i c="1" l="1631735396371" />
+    </e>
+    <e n="ShowIntentionActions">
+      <i c="13" l="1633455871035" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="14" l="1633455648303" />
+    </e>
+    <e n="ShowSettings">
+      <i c="11" l="1632059083897" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1633270851589" />
     </e>
     <e n="WelcomeScreen.CreateNewProject">
-      <i c="3" l="1631733327315" />
+      <i c="5" l="1632774157761" />
+    </e>
+    <e n="WelcomeScreen.OpenProject">
+      <i c="1" l="1632774222038" />
+    </e>
+    <e n="WelcomeScreen.Plugins">
+      <i c="1" l="1633878240254" />
     </e>
     <e n="WelcomeScreen.Settings">
-      <i c="1" l="1631734525955" />
+      <i c="3" l="1633456242652" />
+    </e>
+    <e n="com.intellij.codeInsight.daemon.impl.DaemonTooltipWithActionRenderer$addActionsRow$1">
+      <i c="1" l="1633283264628" />
+    </e>
+    <e n="com.intellij.execution.actions.CreateAction">
+      <i c="1" l="1633456180784" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$DeleteBackspaceHandler">
+      <i c="2" l="1633281449091" />
+    </e>
+    <e n="com.intellij.execution.impl.ConsoleViewImpl$EnterHandler">
+      <i c="25" l="1633456021396" />
     </e>
     <e n="com.intellij.ide.ReopenProjectAction">
-      <i c="1" l="1631733248699" />
+      <i c="2" l="1632773896399" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeKeymapAction$1">
+      <i c="3" l="1633457769829" />
+    </e>
+    <e n="com.intellij.ide.actions.QuickChangeKeymapAction$2">
+      <i c="1" l="1633456754574" />
+    </e>
+    <e n="com.intellij.ide.plugins.newui.PluginsTab$3$1">
+      <i c="2" l="1632051304673" />
+    </e>
+    <e n="com.intellij.notification.NotificationAction$Simple">
+      <i c="1" l="1633453308403" />
+    </e>
+    <e n="com.intellij.openapi.actionSystem.EmptyAction$MyDelegatingAction">
+      <i c="434" l="1633878354804" />
     </e>
     <e n="com.intellij.openapi.externalSystem.action.task.ExternalSystemTaskMenu$DelegatingActionGroup">
-      <i c="1" l="1631733856812" />
+      <i c="2" l="1632083156432" />
     </e>
     <e n="com.intellij.openapi.externalSystem.util.ExternalSystemUtil$2$3$1">
       <i c="1" l="1631731618478" />
     </e>
     <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
-      <i c="3" l="1631731955190" />
+      <i c="18" l="1633457087693" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$AddKeyboardShortcutAction">
+      <i c="3" l="1633457795443" />
+    </e>
+    <e n="com.intellij.openapi.keymap.impl.ui.KeymapPanel$RemoveShortcutAction">
+      <i c="3" l="1633457791855" />
+    </e>
+    <e n="com.intellij.openapi.project.DumbAwareAction$SimpleDumbAwareAction">
+      <i c="11" l="1633878240203" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.libraryEditor.CreateNewLibraryAction">
+      <i c="12" l="1633455667852" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.projectRoot.AddLibraryToModuleDependenciesAction">
+      <i c="1" l="1633284164975" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.projectRoot.BaseStructureConfigurable$MyRemoveAction">
+      <i c="4" l="1633284466581" />
+    </e>
+    <e n="com.intellij.openapi.roots.ui.configuration.projectRoot.ModuleStructureConfigurable$AddModuleAction">
+      <i c="1" l="1632056322368" />
     </e>
     <e n="com.intellij.openapi.ui.DialogWrapper$4">
-      <i c="2" l="1631733151463" />
+      <i c="18" l="1633878525664" />
     </e>
     <e n="com.intellij.openapi.wm.impl.ToolWindowHeader$HideAction">
-      <i c="3" l="1631733971589" />
+      <i c="10" l="1633457551690" />
+    </e>
+    <e n="com.intellij.ui.AnActionButton$AnActionButtonWrapper">
+      <i c="18" l="1633455666322" />
+    </e>
+    <e n="com.intellij.ui.CommonActionsPanel$AddButton">
+      <i c="10" l="1633283363765" />
+    </e>
+    <e n="com.intellij.ui.CommonActionsPanel$RemoveButton">
+      <i c="1" l="1633282271660" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveDownAction">
+      <i c="4" l="1633455805320" />
+    </e>
+    <e n="com.intellij.ui.ScrollingUtil$ListMoveUpAction">
+      <i c="2" l="1633453710630" />
+    </e>
+    <e n="com.maddyhome.idea.vim.group.NotificationService$notifyAboutShortcutConflict$2">
+      <i c="1" l="1633457095607" />
+    </e>
+    <e n="com.maddyhome.idea.vim.ui.ex.ExShortcutKeyAction">
+      <i c="96" l="1633457940974" />
+    </e>
+    <e n="de.halirutan.keypromoterx.KeyPromoterNotification$EditKeymapAction">
+      <i c="1" l="1633457852352" />
     </e>
     <e n="editRunConfigurations">
-      <i c="1" l="1631731623199" />
+      <i c="3" l="1632848877346" />
+    </e>
+    <e n="org.jetbrains.kotlin.tools.projectWizard.wizard.ui.firstStep.BuildSystemTypeSettingComponent$BuildSystemTypeAction">
+      <i c="6" l="1632848736777" />
     </e>
   </component>
 </application>

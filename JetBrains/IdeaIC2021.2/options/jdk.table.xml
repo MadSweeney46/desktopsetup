@@ -1200,5 +1200,25 @@
       </roots>
       <additional />
     </jdk>
+    <jdk version="2">
+      <name value="Kotlin SDK" />
+      <type value="KotlinSDK" />
+      <homePath value="$KOTLIN_BUNDLED$" />
+      <roots>
+        <annotationsPath>
+          <root type="composite" />
+        </annotationsPath>
+        <classPath>
+          <root type="composite" />
+        </classPath>
+        <javadocPath>
+          <root type="composite" />
+        </javadocPath>
+        <sourcePath>
+          <root type="composite" />
+        </sourcePath>
+      </roots>
+      <additional />
+    </jdk>
   </component>
 </application>
