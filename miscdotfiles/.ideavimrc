@@ -1,7 +1,0 @@
-let mapleader ="\<Space>"
-:set number relativenumber
-
-noremap ö :
-
-set easymotion
-set visualbell
