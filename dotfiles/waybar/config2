@@ -21,7 +21,7 @@
     "tray"
   ],
   "custom/launcher": {
-    "format": " ",
+    "format": " ",
     "on-click": "~/.config/rofi/launcher.sh",
     "tooltip": false
   },
@@ -36,8 +36,8 @@
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
-      "activated": "",
-      "deactivated": ""
+      "activated": "",
+      "deactivated": ""
     },
     "tooltip": false
   },
@@ -46,7 +46,7 @@
     "on-scroll-up": "light -A 5",
     "on-scroll-down": "light -U 5",
     "format": "{icon} {percent}%",
-    "format-icons": ["","","",""]
+    "format-icons": ["󰃜","󰃞","󰃟","󰃠"]
   },
   "pulseaudio": {
     "scroll-step": 1,
@@ -69,7 +69,7 @@
       "critical": 10
     },
     "format": "{icon} {capacity}%",
-    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "format-icons": ["", "", "", "", ""],
     "format-full": "{icon} {capacity}%",
     "format-charging": " {capacity}%",
     "tooltip": false
@@ -85,14 +85,14 @@
   },
   "memory": {
     "interval": 1,
-    "format": "﬙ {percentage}%",
+    "format": "󰍛 {percentage}%",
     "states": {
       "warning": 85,
     },
   },
   "cpu": {
     "interval": 1,
-    "format": " {usage}%"
+    "format": "󰇻 {usage}%"
   },
   "mpd": {
     "max-length": 25,
@@ -110,10 +110,10 @@
   },
   "network": {
     "interval": 1,
-    "format-wifi": "說 {essid}",
-    "format-ethernet": "  {ifname} ({ipaddr})",
-    "format-linked": "說 {essid} (No IP)",
-    "format-disconnected": "說 Disconnected",
+    "format-wifi": "󰖩 {essid}",
+    "format-ethernet": "󰈀  {ifname} ({ipaddr})",
+    "format-linked": " {essid} (No IP)",
+    "format-disconnected": "󰌙 Disconnected",
     "tooltip": false
   },
   "temperature": {
